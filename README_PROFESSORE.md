@@ -2,27 +2,20 @@
 
 ## Avvio
 
-Installazione iniziale:
+Su Mac il percorso piu semplice e:
 
 ```bash
-cd backend
-copy .env.example .env
-npm install
-```
-
-```bash
-cd frontend
-copy .env.example .env
-npm install
-```
-
-Avvio dalla root:
-
-```bash
-npm start
+cd analisi-nba-google
+npm run dev
 ```
 
 Applicazione disponibile su `http://localhost:5173`.
+
+Nota:
+
+- al primo avvio, se mancano file `.env` o dipendenze, il progetto li prepara automaticamente
+- backend e frontend partono insieme con un solo comando
+- `npm run dev` e `npm start` dalla root avviano lo stesso launcher
 
 ## Modalita Di Default
 

@@ -35,38 +35,47 @@ Per una guida ancora piu rapida pensata per la correzione, vedere anche `README_
 
 ### Avvio Unico
 
-Dopo avere eseguito `npm install` una volta dentro `backend` e `frontend`, dalla root del progetto puoi avviare tutto con:
+Dalla root del progetto puoi avviare tutto con:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Il comando lancia insieme:
 
 - backend su `http://localhost:3001`
 - frontend su `http://localhost:5173`
+- installa automaticamente le dipendenze mancanti in `backend/` e `frontend/`
+- crea automaticamente i file `.env` partendo da `.env.example` se non esistono
 
-### Backend
+`npm start` dalla root avvia lo stesso launcher.
+
+### Backend Manuale
 
 ```bash
 cd backend
-copy .env.example .env
+cp .env.example .env
 npm install
 npm start
 ```
 
 Backend disponibile su `http://localhost:3001`.
 
-### Frontend
+### Frontend Manuale
 
 ```bash
 cd frontend
-copy .env.example .env
+cp .env.example .env
 npm install
 npm run dev
 ```
 
 Frontend disponibile su `http://localhost:5173`.
+
+Nota:
+
+- su macOS e Linux il comando corretto e `cp`
+- su Windows al posto di `cp` si puo usare `copy`
 
 ## Modalita Snapshot Locale
 
