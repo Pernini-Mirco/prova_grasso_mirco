@@ -3,7 +3,8 @@ import { resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const rootDir = process.cwd();
-const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+const isWindows = process.platform === 'win32';
+const npmCommand = isWindows ? 'cmd.exe' : 'npm';
 
 const services = [
   {
@@ -37,6 +38,14 @@ for (const service of services) {
 const runningChildren = [];
 let shuttingDown = false;
 
+function buildCommandArgs(args) {
+  if (isWindows) {
+    return ['/d', '/s', '/c', 'npm.cmd', ...args];
+  }
+
+  return args;
+}
+
 function killChild(child) {
   if (!child || child.killed) {
     return;
@@ -69,7 +78,7 @@ function shutdown(exitCode = 0) {
 }
 
 for (const service of services) {
-  const child = spawn(npmCommand, service.args, {
+  const child = spawn(npmCommand, buildCommandArgs(service.args), {
     cwd: service.cwd,
     stdio: 'inherit',
     shell: false,
