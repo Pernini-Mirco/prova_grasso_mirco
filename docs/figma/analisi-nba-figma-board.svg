@@ -1,0 +1,412 @@
+<svg width="3600" height="2520" viewBox="0 0 3600 2520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="boardBg" x1="0" y1="0" x2="3600" y2="2520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050D17"/>
+      <stop offset="0.55" stop-color="#091321"/>
+      <stop offset="1" stop-color="#0A1626"/>
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1C4FB5"/>
+      <stop offset="1" stop-color="#79A9FF"/>
+    </linearGradient>
+    <linearGradient id="accentRed" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#FF6A84"/>
+    </linearGradient>
+    <linearGradient id="accentMix" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1C4FB5"/>
+      <stop offset="1" stop-color="#C8102E"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .title { font: 700 72px 'Inter', Arial, sans-serif; fill: #F5F8FC; letter-spacing: -1.8px; }
+      .subtitle { font: 500 28px 'Inter', Arial, sans-serif; fill: #9EB0C7; }
+      .label { font: 700 18px 'Inter', Arial, sans-serif; fill: #9EB0C7; text-transform: uppercase; letter-spacing: 2.5px; }
+      .tiny { font: 600 16px 'Inter', Arial, sans-serif; fill: #788BA4; }
+      .token { font: 700 18px 'Inter', Arial, sans-serif; fill: #F5F8FC; }
+      .frameTitle { font: 700 44px 'Inter', Arial, sans-serif; fill: #F5F8FC; letter-spacing: -1px; }
+      .frameText { font: 500 20px 'Inter', Arial, sans-serif; fill: #9EB0C7; }
+      .navText { font: 700 24px 'Inter', Arial, sans-serif; fill: #F5F8FC; }
+      .body { font: 600 22px 'Inter', Arial, sans-serif; fill: #DCE7F5; }
+      .headline { font: 800 48px 'Inter', Arial, sans-serif; fill: #FFFFFF; letter-spacing: -1px; }
+      .metric { font: 800 34px 'Inter', Arial, sans-serif; fill: #FFFFFF; letter-spacing: -0.6px; }
+      .chip { font: 800 18px 'Inter', Arial, sans-serif; fill: #F6FAFF; letter-spacing: 1.4px; text-transform: uppercase; }
+      .smallTitle { font: 700 24px 'Inter', Arial, sans-serif; fill: #F5F8FC; letter-spacing: -0.2px; }
+      .smallMuted { font: 500 18px 'Inter', Arial, sans-serif; fill: #9EB0C7; }
+      .sectionTitle { font: 700 28px 'Inter', Arial, sans-serif; fill: #FFFFFF; letter-spacing: -0.4px; }
+      .accentBlue { fill: #79A9FF; }
+      .accentRed { fill: #FF6A84; }
+      .accentGold { fill: #F4C74F; }
+      .outline { stroke: rgba(255,255,255,0.08); stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="3600" height="2520" fill="url(#boardBg)"/>
+  <circle cx="3160" cy="240" r="320" fill="#173056" fill-opacity="0.16"/>
+  <circle cx="420" cy="2360" r="380" fill="#C8102E" fill-opacity="0.09"/>
+
+  <g transform="translate(120 100)">
+    <circle cx="46" cy="46" r="46" fill="#101A2C" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <circle cx="46" cy="46" r="29" fill="url(#accentMix)"/>
+    <path d="M46 20 L52 38 L70 38 L55 49 L61 67 L46 56 L31 67 L37 49 L22 38 L40 38 Z" fill="#F5F8FC"/>
+    <text x="116" y="40" class="label" fill="#FF6A84">Analisi NBA</text>
+    <text x="116" y="100" class="title">Figma Board</text>
+    <text x="116" y="146" class="subtitle">Desktop concept board con schermate chiave del progetto, pronta per import in Figma.</text>
+  </g>
+
+  <g transform="translate(120 198)">
+    <rect x="0" y="0" width="510" height="92" rx="28" fill="#0D1828" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <text x="28" y="34" class="label">Palette</text>
+    <circle cx="72" cy="60" r="14" fill="#07111D"/>
+    <text x="98" y="66" class="token">#07111D</text>
+    <circle cx="218" cy="60" r="14" fill="#17408B"/>
+    <text x="244" y="66" class="token">#17408B</text>
+    <circle cx="364" cy="60" r="14" fill="#C8102E"/>
+    <text x="390" y="66" class="token">#C8102E</text>
+
+    <rect x="540" y="0" width="440" height="92" rx="28" fill="#0D1828" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <text x="568" y="34" class="label">Typography</text>
+    <text x="568" y="66" class="token">Inter / 8pt grid / radius 24</text>
+
+    <rect x="1010" y="0" width="620" height="92" rx="28" fill="#0D1828" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <text x="1038" y="34" class="label">Screens</text>
+    <text x="1038" y="66" class="token">Dashboard, Predictions, Players Head to Head, Account/Admin</text>
+  </g>
+
+  <!-- DASHBOARD -->
+  <g transform="translate(120 340)" filter="url(#shadow)">
+    <rect width="1600" height="960" rx="44" fill="#0B1524"/>
+    <rect x="1" y="1" width="1598" height="958" rx="43" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <rect x="34" y="34" width="286" height="892" rx="34" fill="#0E1A2C" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <circle cx="98" cy="104" r="26" fill="url(#accentMix)"/>
+    <text x="136" y="92" class="label" fill="#FF6A84">Analisi NBA</text>
+    <text x="136" y="136" class="frameTitle" style="font-size:52px;">League</text>
+    <text x="136" y="184" class="frameTitle" style="font-size:52px;">Intelligence</text>
+
+    <g transform="translate(54 238)">
+      <rect width="246" height="78" rx="24" fill="url(#accentMix)"/>
+      <circle cx="32" cy="39" r="14" fill="#F5F8FC" fill-opacity="0.16"/>
+      <text x="62" y="49" class="navText">Dashboard</text>
+
+      <rect y="96" width="246" height="78" rx="24" fill="#131F31"/>
+      <text x="62" y="145" class="navText">Squadre</text>
+
+      <rect y="192" width="246" height="78" rx="24" fill="#131F31"/>
+      <text x="62" y="241" class="navText">Giocatori</text>
+
+      <rect y="288" width="246" height="78" rx="24" fill="#131F31"/>
+      <text x="62" y="337" class="navText">Partite</text>
+
+      <rect y="384" width="246" height="78" rx="24" fill="#131F31"/>
+      <text x="62" y="433" class="navText">Predizioni</text>
+
+      <rect y="480" width="246" height="78" rx="24" fill="#131F31"/>
+      <text x="62" y="529" class="navText">Ricerca</text>
+    </g>
+
+    <circle cx="1518" cy="78" r="22" fill="#142238" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <circle cx="1518" cy="78" r="11" fill="#EEF4FD"/>
+
+    <text x="360" y="98" class="label">Overview</text>
+    <text x="360" y="158" class="frameTitle">League Operations</text>
+    <text x="360" y="198" class="frameText">Home dashboard con snapshot, top performer, risultati recenti e sync live.</text>
+
+    <rect x="360" y="236" width="760" height="408" rx="34" fill="#121E30" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="396" y="282" class="label">Top performer</text>
+    <text x="396" y="356" class="headline">Jayson</text>
+    <text x="396" y="414" class="headline">Tatum</text>
+    <text x="396" y="458" class="frameText">Boston Celtics · G · 31 anni</text>
+
+    <g transform="translate(396 514)">
+      <rect width="106" height="118" rx="26" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="20" y="36" class="tiny">PPG</text>
+      <text x="20" y="88" class="metric">25.5</text>
+      <rect x="124" width="106" height="118" rx="26" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="144" y="36" class="tiny">RPG</text>
+      <text x="144" y="88" class="metric">7.0</text>
+      <rect x="248" width="106" height="118" rx="26" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="268" y="36" class="tiny">APG</text>
+      <text x="268" y="88" class="metric">6.0</text>
+      <rect x="372" width="106" height="118" rx="26" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="392" y="36" class="tiny">EFF</text>
+      <text x="392" y="88" class="metric">27</text>
+    </g>
+
+    <rect x="792" y="258" width="290" height="348" rx="28" fill="url(#accentMix)" fill-opacity="0.22"/>
+    <rect x="848" y="306" width="178" height="254" rx="26" fill="#E6EDF9"/>
+    <rect x="866" y="330" width="142" height="204" rx="22" fill="#0E7845"/>
+    <rect x="866" y="330" width="142" height="48" rx="22" fill="#0D243F"/>
+    <circle cx="937" cy="424" r="58" fill="#E2B188"/>
+    <rect x="888" y="486" width="98" height="96" rx="26" fill="#F0F4F9"/>
+
+    <rect x="1152" y="236" width="414" height="204" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="1182" y="278" class="label">Last sync</text>
+    <text x="1182" y="336" class="sectionTitle">07 apr 2026 · 21:40</text>
+    <text x="1182" y="374" class="frameText">MySQL live · Season 2025 · Auto refresh 60s</text>
+    <rect x="1380" y="274" width="156" height="52" rx="26" fill="url(#accentBlue)"/>
+    <text x="1418" y="307" class="chip">Data ready</text>
+
+    <rect x="1152" y="460" width="414" height="222" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="1182" y="502" class="label">League snapshot</text>
+    <rect x="1182" y="532" width="354" height="44" rx="22" fill="#151F31"/>
+    <text x="1210" y="560" class="smallTitle">Best record</text>
+    <text x="1428" y="560" class="smallTitle">64-18</text>
+    <path d="M1208 604 C1268 566 1320 640 1376 590 C1432 540 1480 636 1528 584" stroke="url(#accentBlue)" stroke-width="6" stroke-linecap="round"/>
+    <rect x="1182" y="626" width="354" height="4" rx="2" fill="#1A2E49"/>
+    <rect x="1182" y="646" width="354" height="4" rx="2" fill="#15273F"/>
+
+    <g transform="translate(360 682)">
+      <rect width="282" height="210" rx="28" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="28" y="42" class="label">Squadre</text>
+      <text x="28" y="98" class="metric">30</text>
+      <text x="28" y="136" class="frameText">Franchigie disponibili</text>
+
+      <rect x="304" width="282" height="210" rx="28" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="332" y="42" class="label">Giocatori</text>
+      <text x="332" y="98" class="metric">521</text>
+      <text x="332" y="136" class="frameText">Roster catalogati</text>
+
+      <rect x="608" width="282" height="210" rx="28" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <text x="636" y="42" class="label">Recent results</text>
+      <text x="636" y="92" class="smallTitle">SAC 117 - NOP 113</text>
+      <text x="636" y="132" class="smallMuted">DAL 127 - ORL 138</text>
+      <text x="636" y="168" class="smallMuted">BOS 114 - MIA 109</text>
+    </g>
+  </g>
+
+  <!-- PREDICTIONS -->
+  <g transform="translate(1880 340)" filter="url(#shadow)">
+    <rect width="1600" height="960" rx="44" fill="#0B1524"/>
+    <rect x="1" y="1" width="1598" height="958" rx="43" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+    <text x="44" y="72" class="label">Prediction Lab</text>
+    <text x="44" y="132" class="frameTitle">Matchup Intelligence Center</text>
+    <text x="44" y="172" class="frameText">Control room con selezione squadre, confidence meter, drivers e contesto recente.</text>
+
+    <rect x="44" y="214" width="1512" height="278" rx="34" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="78" y="254" class="label">Control room</text>
+    <rect x="1292" y="238" width="230" height="54" rx="27" fill="#183057" stroke="rgba(122,168,255,0.28)" stroke-width="2"/>
+    <text x="1340" y="272" class="chip">Auto refresh 60s</text>
+
+    <rect x="78" y="318" width="382" height="118" rx="28" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="106" y="352" class="tiny">Squadra di casa</text>
+    <circle cx="146" cy="394" r="24" fill="#0C7A49"/>
+    <text x="184" y="404" class="smallTitle">Boston Celtics</text>
+    <text x="184" y="432" class="smallMuted">BOS · East</text>
+
+    <rect x="520" y="298" width="518" height="160" rx="34" fill="#121B2B" stroke="rgba(122,168,255,0.18)" stroke-width="2"/>
+    <circle cx="590" cy="378" r="28" fill="#0C7A49"/>
+    <text x="574" y="386" class="chip">BOS</text>
+    <circle cx="968" cy="378" r="28" fill="#173F8B"/>
+    <text x="950" y="386" class="chip">DEN</text>
+    <text x="714" y="360" class="label">Matchup center</text>
+    <text x="678" y="414" class="sectionTitle">BOS VS DEN</text>
+    <text x="634" y="446" class="frameText">Boston favorita per forma recente, vantaggio interno e scoring balance.</text>
+
+    <rect x="1098" y="318" width="382" height="118" rx="28" fill="#161F2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="1126" y="352" class="tiny">Squadra ospite</text>
+    <circle cx="1166" cy="394" r="24" fill="#173F8B"/>
+    <text x="1204" y="404" class="smallTitle">Denver Nuggets</text>
+    <text x="1204" y="432" class="smallMuted">DEN · West</text>
+
+    <rect x="44" y="522" width="694" height="198" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="74" y="562" class="label">Projected outcome</text>
+    <text x="74" y="620" class="sectionTitle">Boston Celtics vs Denver Nuggets</text>
+    <rect x="74" y="646" width="176" height="42" rx="21" fill="#183057"/>
+    <text x="115" y="673" class="chip">BOS lead</text>
+    <rect x="74" y="604" width="140" height="4" rx="2" fill="#1A3152"/>
+
+    <rect x="74" y="646" width="170" height="42" rx="21" fill="url(#accentBlue)" fill-opacity="0.14" opacity="0"/>
+    <rect x="90" y="694" width="166" height="12" rx="6" fill="#1B2A43"/>
+    <rect x="90" y="694" width="98" height="12" rx="6" fill="url(#accentBlue)"/>
+    <text x="88" y="738" class="smallMuted">BOS 55% win</text>
+
+    <text x="314" y="664" class="metric">118 - 114</text>
+    <text x="314" y="702" class="frameText">Projected score</text>
+
+    <rect x="556" y="694" width="110" height="12" rx="6" fill="#2A1D28"/>
+    <rect x="556" y="694" width="76" height="12" rx="6" fill="url(#accentRed)"/>
+    <text x="554" y="738" class="smallMuted">DEN 45% win</text>
+
+    <rect x="762" y="522" width="362" height="198" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="792" y="562" class="label">Prediction confidence</text>
+    <text x="792" y="632" class="metric">81 / 100</text>
+    <text x="792" y="674" class="frameText">Alta confidence · gap di 10 punti percentuali</text>
+    <rect x="792" y="700" width="272" height="16" rx="8" fill="#1A2434"/>
+    <rect x="792" y="700" width="224" height="16" rx="8" fill="url(#accentBlue)"/>
+
+    <rect x="1148" y="522" width="408" height="198" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="1178" y="562" class="label">Analyst summary</text>
+    <text x="1178" y="622" class="sectionTitle">Boston Celtics</text>
+    <text x="1178" y="658" class="frameText">Favorita per home court bonus, efficienza offensiva e continuita recente.</text>
+    <rect x="1178" y="684" width="138" height="34" rx="17" fill="#1A3152"/>
+    <text x="1204" y="706" class="tiny">BOS ultimi 5: 4W-1L</text>
+    <rect x="1330" y="684" width="138" height="34" rx="17" fill="#311822"/>
+    <text x="1355" y="706" class="tiny">DEN ultimi 5: 3W-2L</text>
+
+    <rect x="44" y="748" width="928" height="178" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="74" y="788" class="label">Model drivers</text>
+    <rect x="74" y="814" width="264" height="78" rx="22" fill="#161F2B"/>
+    <text x="98" y="846" class="tiny">Scoring edge</text>
+    <text x="98" y="878" class="smallTitle">BOS · 118.4 PPG</text>
+    <rect x="354" y="814" width="264" height="78" rx="22" fill="#161F2B"/>
+    <text x="378" y="846" class="tiny">Form</text>
+    <text x="378" y="878" class="smallTitle">BOS · 82%</text>
+    <rect x="634" y="814" width="304" height="78" rx="22" fill="#161F2B"/>
+    <text x="658" y="846" class="tiny">Possession control</text>
+    <text x="658" y="878" class="smallTitle">Rebounds + assists mix</text>
+
+    <rect x="996" y="748" width="560" height="178" rx="30" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="1026" y="788" class="label">Recent context</text>
+    <text x="1026" y="826" class="smallTitle">Head to head</text>
+    <text x="1026" y="860" class="smallMuted">BOS 112 - DEN 107 · 22 Mar</text>
+    <text x="1026" y="894" class="smallMuted">DEN 109 - BOS 104 · 11 Feb</text>
+    <text x="1324" y="826" class="smallTitle">Last games</text>
+    <text x="1324" y="860" class="smallMuted">BOS 120 - MIA 109</text>
+    <text x="1324" y="894" class="smallMuted">DEN 118 - LAL 111</text>
+  </g>
+
+  <!-- PLAYERS HEAD TO HEAD -->
+  <g transform="translate(120 1360)" filter="url(#shadow)">
+    <rect width="1600" height="960" rx="44" fill="#0B1524"/>
+    <rect x="1" y="1" width="1598" height="958" rx="43" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+    <text x="44" y="72" class="label">Players</text>
+    <text x="44" y="132" class="frameTitle">Head to Head Comparison</text>
+    <text x="44" y="172" class="frameText">Confronto premium tra giocatori con picker fotografici, statistiche e balance visivo.</text>
+
+    <rect x="44" y="220" width="1512" height="196" rx="34" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <rect x="78" y="266" width="474" height="106" rx="28" fill="#161F2B"/>
+    <text x="108" y="300" class="tiny">Player A</text>
+    <circle cx="148" cy="330" r="30" fill="#E2B188"/>
+    <rect x="120" y="340" width="56" height="40" rx="18" fill="#0B8F57"/>
+    <text x="194" y="338" class="smallTitle">Jayson Tatum</text>
+    <text x="194" y="368" class="smallMuted">Boston Celtics · G/F</text>
+
+    <rect x="560" y="248" width="478" height="142" rx="34" fill="#131E31" stroke="rgba(122,168,255,0.18)" stroke-width="2"/>
+    <text x="738" y="304" class="label">VS</text>
+    <text x="654" y="356" class="sectionTitle">Elite matchup selection</text>
+
+    <rect x="1046" y="266" width="474" height="106" rx="28" fill="#161F2B"/>
+    <text x="1076" y="300" class="tiny">Player B</text>
+    <circle cx="1116" cy="330" r="30" fill="#D3A27B"/>
+    <rect x="1088" y="340" width="56" height="40" rx="18" fill="#17408B"/>
+    <text x="1162" y="338" class="smallTitle">Nikola Jokic</text>
+    <text x="1162" y="368" class="smallMuted">Denver Nuggets · C</text>
+
+    <rect x="44" y="448" width="734" height="442" rx="32" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="74" y="490" class="label">Player profile</text>
+    <circle cx="164" cy="612" r="108" fill="#E3EAF6"/>
+    <rect x="120" y="668" width="88" height="136" rx="34" fill="#0B8F57"/>
+    <text x="314" y="564" class="headline" style="font-size:58px;">Jayson</text>
+    <text x="314" y="624" class="headline" style="font-size:58px;">Tatum</text>
+    <text x="314" y="666" class="frameText">Boston Celtics · G/F · 31 anni</text>
+    <rect x="314" y="714" width="94" height="108" rx="24" fill="#161F2B"/>
+    <text x="336" y="748" class="tiny">PPG</text>
+    <text x="334" y="796" class="metric">25.5</text>
+    <rect x="424" y="714" width="94" height="108" rx="24" fill="#161F2B"/>
+    <text x="446" y="748" class="tiny">RPG</text>
+    <text x="446" y="796" class="metric">7.0</text>
+    <rect x="534" y="714" width="94" height="108" rx="24" fill="#161F2B"/>
+    <text x="556" y="748" class="tiny">APG</text>
+    <text x="556" y="796" class="metric">6.0</text>
+    <rect x="644" y="714" width="94" height="108" rx="24" fill="#161F2B"/>
+    <text x="666" y="748" class="tiny">EFF</text>
+    <text x="666" y="796" class="metric">27</text>
+
+    <rect x="806" y="448" width="750" height="442" rx="32" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="836" y="490" class="label">Comparison board</text>
+
+    <text x="836" y="560" class="smallTitle">Scoring</text>
+    <text x="1118" y="560" class="smallTitle">25.5</text>
+    <text x="1464" y="560" class="smallTitle">24.9</text>
+    <rect x="952" y="546" width="474" height="18" rx="9" fill="#1A2436"/>
+    <rect x="952" y="546" width="258" height="18" rx="9" fill="url(#accentBlue)"/>
+    <rect x="1210" y="546" width="216" height="18" rx="9" fill="url(#accentRed)"/>
+
+    <text x="836" y="642" class="smallTitle">Playmaking</text>
+    <text x="1118" y="642" class="smallTitle">6.0</text>
+    <text x="1464" y="642" class="smallTitle">9.4</text>
+    <rect x="952" y="628" width="474" height="18" rx="9" fill="#1A2436"/>
+    <rect x="952" y="628" width="178" height="18" rx="9" fill="url(#accentBlue)"/>
+    <rect x="1130" y="628" width="296" height="18" rx="9" fill="url(#accentRed)"/>
+
+    <text x="836" y="724" class="smallTitle">Rebounds</text>
+    <text x="1118" y="724" class="smallTitle">7.0</text>
+    <text x="1464" y="724" class="smallTitle">12.1</text>
+    <rect x="952" y="710" width="474" height="18" rx="9" fill="#1A2436"/>
+    <rect x="952" y="710" width="156" height="18" rx="9" fill="url(#accentBlue)"/>
+    <rect x="1108" y="710" width="318" height="18" rx="9" fill="url(#accentRed)"/>
+
+    <text x="836" y="806" class="smallTitle">Efficiency</text>
+    <text x="1118" y="806" class="smallTitle">27.0</text>
+    <text x="1464" y="806" class="smallTitle">29.1</text>
+    <rect x="952" y="792" width="474" height="18" rx="9" fill="#1A2436"/>
+    <rect x="952" y="792" width="214" height="18" rx="9" fill="url(#accentBlue)"/>
+    <rect x="1166" y="792" width="260" height="18" rx="9" fill="url(#accentRed)"/>
+  </g>
+
+  <!-- ACCOUNT / ADMIN -->
+  <g transform="translate(1880 1360)" filter="url(#shadow)">
+    <rect width="1600" height="960" rx="44" fill="#0B1524"/>
+    <rect x="1" y="1" width="1598" height="958" rx="43" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+    <text x="44" y="72" class="label">Account</text>
+    <text x="44" y="132" class="frameTitle">Profilo e controllo amministratore</text>
+    <text x="44" y="172" class="frameText">Area utente post-accesso con modifica dati personali, sicurezza e strumenti admin.</text>
+
+    <rect x="44" y="220" width="456" height="688" rx="34" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <circle cx="272" cy="352" r="78" fill="url(#accentBlue)"/>
+    <circle cx="272" cy="334" r="28" fill="#F5F8FC"/>
+    <rect x="226" y="374" width="92" height="58" rx="28" fill="#F5F8FC"/>
+    <text x="196" y="478" class="label">Account</text>
+    <text x="116" y="550" class="sectionTitle">Admin NBA</text>
+    <text x="116" y="590" class="frameText">admin@analisinba.local</text>
+    <rect x="116" y="640" width="312" height="64" rx="22" fill="#161F2B"/>
+    <text x="142" y="678" class="smallMuted">Nome visualizzato</text>
+    <text x="142" y="700" class="smallTitle">Admin NBA</text>
+    <rect x="116" y="728" width="312" height="64" rx="22" fill="#161F2B"/>
+    <text x="142" y="766" class="smallMuted">Ruolo</text>
+    <text x="142" y="788" class="smallTitle">administrator</text>
+    <rect x="116" y="820" width="166" height="54" rx="27" fill="url(#accentBlue)"/>
+    <text x="154" y="854" class="chip">Salva dati</text>
+
+    <rect x="530" y="220" width="1026" height="322" rx="34" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="564" y="260" class="label">Profile editing</text>
+    <rect x="564" y="300" width="458" height="78" rx="24" fill="#161F2B"/>
+    <text x="590" y="336" class="smallMuted">Nome</text>
+    <text x="590" y="366" class="smallTitle">Admin NBA</text>
+    <rect x="1048" y="300" width="458" height="78" rx="24" fill="#161F2B"/>
+    <text x="1074" y="336" class="smallMuted">Email</text>
+    <text x="1074" y="366" class="smallTitle">admin@analisinba.local</text>
+    <rect x="564" y="400" width="458" height="96" rx="24" fill="#161F2B"/>
+    <text x="590" y="436" class="smallMuted">Nuova password</text>
+    <text x="590" y="470" class="smallTitle">••••••••••••</text>
+    <rect x="1048" y="400" width="458" height="96" rx="24" fill="#161F2B"/>
+    <text x="1074" y="436" class="smallMuted">Conferma password</text>
+    <text x="1074" y="470" class="smallTitle">••••••••••••</text>
+
+    <rect x="530" y="572" width="1026" height="336" rx="34" fill="#111A2B" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    <text x="564" y="612" class="label">Admin console</text>
+    <text x="564" y="662" class="sectionTitle">Modifica dati sportivi</text>
+    <rect x="564" y="704" width="290" height="64" rx="22" fill="#161F2B"/>
+    <text x="590" y="742" class="smallTitle">Seleziona squadra</text>
+    <rect x="876" y="704" width="290" height="64" rx="22" fill="#161F2B"/>
+    <text x="902" y="742" class="smallTitle">Seleziona partita</text>
+    <rect x="1188" y="704" width="318" height="64" rx="22" fill="#161F2B"/>
+    <text x="1214" y="742" class="smallTitle">Aggiorna stato</text>
+
+    <rect x="564" y="794" width="942" height="86" rx="24" fill="#161F2B"/>
+    <text x="590" y="828" class="smallMuted">Operazione</text>
+    <text x="590" y="858" class="smallTitle">Boston Celtics · win_pct 0.780 · assists_per_game 27.4</text>
+  </g>
+
+  <g transform="translate(120 2388)">
+    <text x="0" y="0" class="tiny">File esportato come SVG vettoriale per import diretto in Figma. Tutti gli elementi sono editabili dopo l'import.</text>
+  </g>
+</svg>

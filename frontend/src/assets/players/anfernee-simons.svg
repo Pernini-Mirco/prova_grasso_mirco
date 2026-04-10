@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2b63d"/>
+      <stop offset="100%" stop-color="#2b1a07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.28)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" rx="40" fill="url(#bg)"/>
+  <rect x="26" y="26" width="588" height="588" rx="32" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="3"/>
+  <circle cx="320" cy="228" r="118" fill="url(#glow)" opacity="0.9"/>
+  <circle cx="320" cy="226" r="92" fill="rgba(255,255,255,0.14)"/>
+  <path d="M170 526c30-98 92-152 150-152s120 54 150 152" fill="rgba(255,255,255,0.14)"/>
+  <path d="M218 468c30 22 62 34 102 34 39 0 72-12 102-34v54H218z" fill="#fff0bf" opacity="0.88"/>
+  <circle cx="290" cy="210" r="10" fill="rgba(255,255,255,0.34)"/>
+  <circle cx="350" cy="210" r="10" fill="rgba(255,255,255,0.34)"/>
+  <path d="M277 264c20 16 66 16 86 0" fill="none" stroke="rgba(255,255,255,0.34)" stroke-width="8" stroke-linecap="round"/>
+  <rect x="246" y="72" width="148" height="42" rx="21" fill="rgba(15,15,15,0.22)"/>
+  <text x="320" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5" fill="#FFFFFF">POR</text>
+</svg>

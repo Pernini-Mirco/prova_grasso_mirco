@@ -1,0 +1,12 @@
+{
+  "name": "analisi-nba-google",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/dev-all.mjs",
+    "dev": "node scripts/dev-all.mjs",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend run dev"
+  }
+}

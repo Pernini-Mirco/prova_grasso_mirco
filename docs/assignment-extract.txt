@@ -1,0 +1,61 @@
+--- PAGE 1 ---
+Progetto: Piattaforma di sport-analytics 
+Si progetti e si sviluppi un’applicazione web per una piattaforma di sport-analytics. Si realizzi anche una 
+relazione tecnica che descriva le soluzioni implementate. 
+Frontend: sviluppa una dashboard in cui allenatori, analisti e tifosi possono visualizzare dati sportivi, 
+monitorare le prestazioni della squadra e ottenere approfondimenti. 
+Data engineering: sviluppa un software o uno script che permetta la raccolta dati automatizzata da fonti 
+online (web scraping o fetching API pubbliche), la pulizia e l’organizzazione dei dati raccolti (data cleaning) 
+e l’inserimento in un database non-relazionale. 
+Database: progettare e realizzare 
+•modello E/R 
+•schema logico relazionale 
+•implementazione in MySQL 
+Backend: crea un sistema backend per l’analisi dei dati sportivi, comprese statistiche sui giocatori, risultati 
+delle partite. 
+Implementa almeno un algoritmo per analizzare, ad esempio, una delle seguenti voci: 
+•prestazioni dei giocatori 
+•prevedere i risultati delle partite  
+Esempio: 
+% possibile vittoria-pareggio-sconfitta partita 
+•identificare gli indicatori chiave di prestazione 
+Implementare le funzionalità per gestire i vari tipi di utenti. 
+Vincolo fondamentale: solo l’utente amministratore può modificare i dati 
+Il progetto deve essere pubblicato su GitHub e contenere: 
+•codice frontend 
+•codice backend 
+•script data engineering 
+•database 
+Griglia di valutazione - voto pratico 
+Frontend: 
+•Pagine HTML  
+•Framework - React- Angular ecc.  
+•Senza Framework o Bootstrap 
+•JS: richieste  
+Backend: 
+•NodeJs - Express:  
+‣Gestione endpoint 
+‣Algoritmo di analisi 
+•Script raccolta dati 
+•Database relazionale: 
+‣Progettazione E/R 
+‣Schema Logico 
+‣Normalizzazione DB 
+‣Implementazione SQL 
+Gestione errori/collaudo 
+Vittoria Squadra1 Pareggio Vittoria Squadra1
+50% 30% 20%
+
+--- PAGE 2 ---
+Relazione tecnica (voto teorico): produrre un documento di specifiche funzionali che illustri le funzionalità 
+sviluppate e le soluzioni tecniche implementate.  
+Il documento deve seguire il seguente schema: 
+Pagina frontespizio con titolo e autori 
+Introduzione e descrizione del problema 
+Elenco e discussione funzionalità richieste 
+Mockup progettazione UI, e mappa dell’applicazione 
+Progettazione Database e spiegazione scelte progettuali 
+Descrizione dell’algoritmo (o degli algoritmi) di analisi dei dati sportivi 
+Descrizione della procedura di data engineering 
+Descrizione degli endpoint del web service sviluppati 
+La relazione deve essere caricata sulla piattaforma MOODLE.

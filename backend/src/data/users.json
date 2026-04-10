@@ -1,0 +1,74 @@
+[
+  {
+    "email": "admin@analisinba.local",
+    "password": "admin123",
+    "role": "admin",
+    "name": "Admin NBA"
+  },
+  {
+    "email": "viewer@analisinba.local",
+    "password": "viewer123",
+    "role": "viewer",
+    "name": "Viewer NBA"
+  },
+  {
+    "id": "601a5157-7bd9-43ab-bc1c-53281d129726",
+    "email": "feucdjn@efhcudn",
+    "name": "efucnjfewohcdunj qhfeiocsnxhuefqcud",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "a74763bbb70247ef051aca7c2f6675e1",
+    "passwordHash": "f8312920c6aef1557e72404de2a14d607d755f88eb6d382a784dc1c8d45c4468cad1a2c27e6a9f0cc2b191ccb514a1646e74f5ed4c41dbd001eca6e27b4bb842",
+    "createdAt": "2026-03-30T08:22:26.408Z"
+  },
+  {
+    "id": "210558dd-3167-48d4-b6d3-d66f75b01838",
+    "email": "fra@gjdcked.com",
+    "name": "francesco",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "e0df04c3151c6449d04afa825000a369",
+    "passwordHash": "101dbc0715440e3ed3ab97dac228ae990c91e64cb8c62b6dc06045cf17db09b23f9a1ada2ed94d386bd97c0dde6ccd5c2caabba8dc6d064b2c565ec589483e9c",
+    "createdAt": "2026-04-03T20:51:22.849Z"
+  },
+  {
+    "id": "6e65429f-ee0f-447a-bc30-5d6eae135fa6",
+    "email": "testdbuser@example.com",
+    "name": "Test DB User",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "bc7b465f4c80cc12a5bbb991a170032b",
+    "passwordHash": "3e5f2a746078808e2125fdaba54954fa858a5692d57075453ad2b0f81dadd891994e6aab4635bc41cd32313d467192cc52fb19a73074819214d93936cff86dc1",
+    "createdAt": "2026-04-03T21:03:03.734Z"
+  },
+  {
+    "id": "406a1922-87ab-4085-9ffc-9d655d17820e",
+    "email": "checkuser@example.com",
+    "name": "Check User",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "b7ec18282a7d6eecf4958d999f14a4da",
+    "passwordHash": "3df38dca67180f7b6fac6f1f66e3d4b147716d96161e07b1d540295a4ae92681950de3b7f298e9ac792f3ecc54ed63d6b1a85ae0f36e50aca08a503a292a2b47",
+    "createdAt": "2026-04-03T21:05:38.459Z"
+  },
+  {
+    "id": "29cb5268-c7b5-41e4-8d4e-3834328bc9d1",
+    "email": "f@gmail.com",
+    "name": "francesco rossi",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "4822fd9611b710f5eb4c4746e65c55ed",
+    "passwordHash": "45f33e9ea5a578dcb0cc48dca7c7fa27828f438fb7551ed6342993b18187461792a5c73ee381f60a6d3717a6e0d3b066a147566a20ef7266434852e8fdb8e6f0",
+    "createdAt": "2026-04-04T11:55:11.079Z"
+  },
+  {
+    "id": "8d43388c-b648-4f5b-9e58-84eadc1e8845",
+    "email": "dbretryuser@example.com",
+    "name": "Db Retry User",
+    "role": "viewer",
+    "provider": "local",
+    "salt": "7b6fe868815f760e0bb0dc68c59c1358",
+    "passwordHash": "e5a7fc19f6f3c3d14236613bf1d741b15d74d17c903c9f8eec3317d6c97fbb4662c92a95408c942b3a55382cb13157f9f3459c16f0035ff68d17c8a45b54b9d3",
+    "createdAt": "2026-04-04T11:56:15.438Z"
+  }
+]

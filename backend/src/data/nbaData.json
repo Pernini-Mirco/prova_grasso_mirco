@@ -1,0 +1,3389 @@
+{
+  "meta": {
+    "project": "Analisi NBA",
+    "generatedAt": "2026-03-30",
+    "note": "Snapshot demo coerente per dashboard e predizioni."
+  },
+  "teams": [
+    {
+      "id": 1,
+      "name": "Atlanta Hawks",
+      "abbreviation": "ATL",
+      "conference": "East",
+      "division": "Southeast",
+      "city": "Atlanta"
+    },
+    {
+      "id": 2,
+      "name": "Boston Celtics",
+      "abbreviation": "BOS",
+      "conference": "East",
+      "division": "Atlantic",
+      "city": "Boston"
+    },
+    {
+      "id": 3,
+      "name": "Brooklyn Nets",
+      "abbreviation": "BKN",
+      "conference": "East",
+      "division": "Atlantic",
+      "city": "Brooklyn"
+    },
+    {
+      "id": 4,
+      "name": "Charlotte Hornets",
+      "abbreviation": "CHA",
+      "conference": "East",
+      "division": "Southeast",
+      "city": "Charlotte"
+    },
+    {
+      "id": 5,
+      "name": "Chicago Bulls",
+      "abbreviation": "CHI",
+      "conference": "East",
+      "division": "Central",
+      "city": "Chicago"
+    },
+    {
+      "id": 6,
+      "name": "Cleveland Cavaliers",
+      "abbreviation": "CLE",
+      "conference": "East",
+      "division": "Central",
+      "city": "Cleveland"
+    },
+    {
+      "id": 7,
+      "name": "Detroit Pistons",
+      "abbreviation": "DET",
+      "conference": "East",
+      "division": "Central",
+      "city": "Detroit"
+    },
+    {
+      "id": 8,
+      "name": "Indiana Pacers",
+      "abbreviation": "IND",
+      "conference": "East",
+      "division": "Central",
+      "city": "Indianapolis"
+    },
+    {
+      "id": 9,
+      "name": "Miami Heat",
+      "abbreviation": "MIA",
+      "conference": "East",
+      "division": "Southeast",
+      "city": "Miami"
+    },
+    {
+      "id": 10,
+      "name": "Milwaukee Bucks",
+      "abbreviation": "MIL",
+      "conference": "East",
+      "division": "Central",
+      "city": "Milwaukee"
+    },
+    {
+      "id": 11,
+      "name": "New York Knicks",
+      "abbreviation": "NYK",
+      "conference": "East",
+      "division": "Atlantic",
+      "city": "New York"
+    },
+    {
+      "id": 12,
+      "name": "Orlando Magic",
+      "abbreviation": "ORL",
+      "conference": "East",
+      "division": "Southeast",
+      "city": "Orlando"
+    },
+    {
+      "id": 13,
+      "name": "Philadelphia 76ers",
+      "abbreviation": "PHI",
+      "conference": "East",
+      "division": "Atlantic",
+      "city": "Philadelphia"
+    },
+    {
+      "id": 14,
+      "name": "Toronto Raptors",
+      "abbreviation": "TOR",
+      "conference": "East",
+      "division": "Atlantic",
+      "city": "Toronto"
+    },
+    {
+      "id": 15,
+      "name": "Washington Wizards",
+      "abbreviation": "WAS",
+      "conference": "East",
+      "division": "Southeast",
+      "city": "Washington"
+    },
+    {
+      "id": 16,
+      "name": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "conference": "West",
+      "division": "Southwest",
+      "city": "Dallas"
+    },
+    {
+      "id": 17,
+      "name": "Denver Nuggets",
+      "abbreviation": "DEN",
+      "conference": "West",
+      "division": "Northwest",
+      "city": "Denver"
+    },
+    {
+      "id": 18,
+      "name": "Golden State Warriors",
+      "abbreviation": "GSW",
+      "conference": "West",
+      "division": "Pacific",
+      "city": "San Francisco"
+    },
+    {
+      "id": 19,
+      "name": "Houston Rockets",
+      "abbreviation": "HOU",
+      "conference": "West",
+      "division": "Southwest",
+      "city": "Houston"
+    },
+    {
+      "id": 20,
+      "name": "LA Clippers",
+      "abbreviation": "LAC",
+      "conference": "West",
+      "division": "Pacific",
+      "city": "Los Angeles"
+    },
+    {
+      "id": 21,
+      "name": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "conference": "West",
+      "division": "Pacific",
+      "city": "Los Angeles"
+    },
+    {
+      "id": 22,
+      "name": "Memphis Grizzlies",
+      "abbreviation": "MEM",
+      "conference": "West",
+      "division": "Southwest",
+      "city": "Memphis"
+    },
+    {
+      "id": 23,
+      "name": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "conference": "West",
+      "division": "Northwest",
+      "city": "Minneapolis"
+    },
+    {
+      "id": 24,
+      "name": "New Orleans Pelicans",
+      "abbreviation": "NOP",
+      "conference": "West",
+      "division": "Southwest",
+      "city": "New Orleans"
+    },
+    {
+      "id": 25,
+      "name": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "conference": "West",
+      "division": "Northwest",
+      "city": "Oklahoma City"
+    },
+    {
+      "id": 26,
+      "name": "Phoenix Suns",
+      "abbreviation": "PHX",
+      "conference": "West",
+      "division": "Pacific",
+      "city": "Phoenix"
+    },
+    {
+      "id": 27,
+      "name": "Portland Trail Blazers",
+      "abbreviation": "POR",
+      "conference": "West",
+      "division": "Northwest",
+      "city": "Portland"
+    },
+    {
+      "id": 28,
+      "name": "Sacramento Kings",
+      "abbreviation": "SAC",
+      "conference": "West",
+      "division": "Pacific",
+      "city": "Sacramento"
+    },
+    {
+      "id": 29,
+      "name": "San Antonio Spurs",
+      "abbreviation": "SAS",
+      "conference": "West",
+      "division": "Southwest",
+      "city": "San Antonio"
+    },
+    {
+      "id": 30,
+      "name": "Utah Jazz",
+      "abbreviation": "UTA",
+      "conference": "West",
+      "division": "Northwest",
+      "city": "Salt Lake City"
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "team_id": 1,
+      "name": "Trae Young",
+      "position": "G",
+      "age": 21,
+      "pointsPerGame": 20.4,
+      "reboundsPerGame": 5.9,
+      "assistsPerGame": 5.0,
+      "efficiency": 25.3
+    },
+    {
+      "id": 2,
+      "team_id": 1,
+      "name": "Dejounte Murray",
+      "position": "F",
+      "age": 29,
+      "pointsPerGame": 19.0,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 4.1,
+      "efficiency": 23.9
+    },
+    {
+      "id": 3,
+      "team_id": 1,
+      "name": "Jalen Johnson",
+      "position": "C",
+      "age": 33,
+      "pointsPerGame": 18.1,
+      "reboundsPerGame": 9.6,
+      "assistsPerGame": 4.6,
+      "efficiency": 22.4
+    },
+    {
+      "id": 4,
+      "team_id": 2,
+      "name": "Jayson Tatum",
+      "position": "G",
+      "age": 31,
+      "pointsPerGame": 25.5,
+      "reboundsPerGame": 7.0,
+      "assistsPerGame": 6.0,
+      "efficiency": 27.0
+    },
+    {
+      "id": 5,
+      "team_id": 2,
+      "name": "Jaylen Brown",
+      "position": "F",
+      "age": 20,
+      "pointsPerGame": 23.3,
+      "reboundsPerGame": 9.3,
+      "assistsPerGame": 6.2,
+      "efficiency": 27.2
+    },
+    {
+      "id": 6,
+      "team_id": 2,
+      "name": "Jrue Holiday",
+      "position": "C",
+      "age": 25,
+      "pointsPerGame": 21.9,
+      "reboundsPerGame": 9.7,
+      "assistsPerGame": 4.2,
+      "efficiency": 25.9
+    },
+    {
+      "id": 7,
+      "team_id": 3,
+      "name": "Mikal Bridges",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 20.4,
+      "reboundsPerGame": 5.6,
+      "assistsPerGame": 5.3,
+      "efficiency": 23.6
+    },
+    {
+      "id": 8,
+      "team_id": 3,
+      "name": "Cam Thomas",
+      "position": "F",
+      "age": 34,
+      "pointsPerGame": 19.3,
+      "reboundsPerGame": 7.7,
+      "assistsPerGame": 5.1,
+      "efficiency": 23.2
+    },
+    {
+      "id": 9,
+      "team_id": 3,
+      "name": "Nic Claxton",
+      "position": "C",
+      "age": 31,
+      "pointsPerGame": 16.5,
+      "reboundsPerGame": 9.4,
+      "assistsPerGame": 3.8,
+      "efficiency": 22.8
+    },
+    {
+      "id": 10,
+      "team_id": 4,
+      "name": "LaMelo Ball",
+      "position": "G",
+      "age": 32,
+      "pointsPerGame": 19.9,
+      "reboundsPerGame": 5.5,
+      "assistsPerGame": 5.1,
+      "efficiency": 22.4
+    },
+    {
+      "id": 11,
+      "team_id": 4,
+      "name": "Brandon Miller",
+      "position": "F",
+      "age": 35,
+      "pointsPerGame": 17.6,
+      "reboundsPerGame": 7.6,
+      "assistsPerGame": 4.2,
+      "efficiency": 22.5
+    },
+    {
+      "id": 12,
+      "team_id": 4,
+      "name": "Miles Bridges",
+      "position": "C",
+      "age": 34,
+      "pointsPerGame": 15.4,
+      "reboundsPerGame": 9.0,
+      "assistsPerGame": 3.8,
+      "efficiency": 20.3
+    },
+    {
+      "id": 13,
+      "team_id": 5,
+      "name": "Zach LaVine",
+      "position": "G",
+      "age": 27,
+      "pointsPerGame": 22.1,
+      "reboundsPerGame": 6.5,
+      "assistsPerGame": 5.9,
+      "efficiency": 25.1
+    },
+    {
+      "id": 14,
+      "team_id": 5,
+      "name": "DeMar DeRozan",
+      "position": "F",
+      "age": 28,
+      "pointsPerGame": 19.9,
+      "reboundsPerGame": 7.5,
+      "assistsPerGame": 4.4,
+      "efficiency": 23.9
+    },
+    {
+      "id": 15,
+      "team_id": 5,
+      "name": "Coby White",
+      "position": "C",
+      "age": 33,
+      "pointsPerGame": 16.9,
+      "reboundsPerGame": 8.5,
+      "assistsPerGame": 4.0,
+      "efficiency": 23.3
+    },
+    {
+      "id": 16,
+      "team_id": 6,
+      "name": "Donovan Mitchell",
+      "position": "G",
+      "age": 22,
+      "pointsPerGame": 24.1,
+      "reboundsPerGame": 6.3,
+      "assistsPerGame": 5.2,
+      "efficiency": 27.3
+    },
+    {
+      "id": 17,
+      "team_id": 6,
+      "name": "Darius Garland",
+      "position": "F",
+      "age": 23,
+      "pointsPerGame": 20.5,
+      "reboundsPerGame": 8.3,
+      "assistsPerGame": 4.9,
+      "efficiency": 24.6
+    },
+    {
+      "id": 18,
+      "team_id": 6,
+      "name": "Jarrett Allen",
+      "position": "C",
+      "age": 23,
+      "pointsPerGame": 20.4,
+      "reboundsPerGame": 9.0,
+      "assistsPerGame": 4.2,
+      "efficiency": 25.4
+    },
+    {
+      "id": 19,
+      "team_id": 7,
+      "name": "Cade Cunningham",
+      "position": "G",
+      "age": 21,
+      "pointsPerGame": 19.0,
+      "reboundsPerGame": 5.9,
+      "assistsPerGame": 4.4,
+      "efficiency": 21.8
+    },
+    {
+      "id": 20,
+      "team_id": 7,
+      "name": "Jaden Ivey",
+      "position": "F",
+      "age": 25,
+      "pointsPerGame": 16.8,
+      "reboundsPerGame": 6.3,
+      "assistsPerGame": 3.8,
+      "efficiency": 19.9
+    },
+    {
+      "id": 21,
+      "team_id": 7,
+      "name": "Jalen Duren",
+      "position": "C",
+      "age": 21,
+      "pointsPerGame": 16.2,
+      "reboundsPerGame": 7.8,
+      "assistsPerGame": 3.3,
+      "efficiency": 21.1
+    },
+    {
+      "id": 22,
+      "team_id": 8,
+      "name": "Tyrese Haliburton",
+      "position": "G",
+      "age": 25,
+      "pointsPerGame": 23.6,
+      "reboundsPerGame": 6.5,
+      "assistsPerGame": 5.1,
+      "efficiency": 26.3
+    },
+    {
+      "id": 23,
+      "team_id": 8,
+      "name": "Pascal Siakam",
+      "position": "F",
+      "age": 27,
+      "pointsPerGame": 20.4,
+      "reboundsPerGame": 7.3,
+      "assistsPerGame": 4.9,
+      "efficiency": 25.3
+    },
+    {
+      "id": 24,
+      "team_id": 8,
+      "name": "Myles Turner",
+      "position": "C",
+      "age": 23,
+      "pointsPerGame": 18.9,
+      "reboundsPerGame": 9.5,
+      "assistsPerGame": 4.1,
+      "efficiency": 24.2
+    },
+    {
+      "id": 25,
+      "team_id": 9,
+      "name": "Jimmy Butler",
+      "position": "G",
+      "age": 21,
+      "pointsPerGame": 23.4,
+      "reboundsPerGame": 6.8,
+      "assistsPerGame": 6.2,
+      "efficiency": 26.0
+    },
+    {
+      "id": 26,
+      "team_id": 9,
+      "name": "Bam Adebayo",
+      "position": "F",
+      "age": 35,
+      "pointsPerGame": 21.7,
+      "reboundsPerGame": 7.2,
+      "assistsPerGame": 5.2,
+      "efficiency": 25.4
+    },
+    {
+      "id": 27,
+      "team_id": 9,
+      "name": "Tyler Herro",
+      "position": "C",
+      "age": 20,
+      "pointsPerGame": 18.7,
+      "reboundsPerGame": 9.9,
+      "assistsPerGame": 3.8,
+      "efficiency": 23.7
+    },
+    {
+      "id": 28,
+      "team_id": 10,
+      "name": "Giannis Antetokounmpo",
+      "position": "G",
+      "age": 32,
+      "pointsPerGame": 24.2,
+      "reboundsPerGame": 6.5,
+      "assistsPerGame": 6.6,
+      "efficiency": 26.7
+    },
+    {
+      "id": 29,
+      "team_id": 10,
+      "name": "Damian Lillard",
+      "position": "F",
+      "age": 28,
+      "pointsPerGame": 22.7,
+      "reboundsPerGame": 8.2,
+      "assistsPerGame": 4.7,
+      "efficiency": 26.4
+    },
+    {
+      "id": 30,
+      "team_id": 10,
+      "name": "Khris Middleton",
+      "position": "C",
+      "age": 24,
+      "pointsPerGame": 21.0,
+      "reboundsPerGame": 9.4,
+      "assistsPerGame": 4.1,
+      "efficiency": 24.2
+    },
+    {
+      "id": 31,
+      "team_id": 11,
+      "name": "Jalen Brunson",
+      "position": "G",
+      "age": 34,
+      "pointsPerGame": 24.1,
+      "reboundsPerGame": 6.7,
+      "assistsPerGame": 6.6,
+      "efficiency": 28.1
+    },
+    {
+      "id": 32,
+      "team_id": 11,
+      "name": "Julius Randle",
+      "position": "F",
+      "age": 27,
+      "pointsPerGame": 21.4,
+      "reboundsPerGame": 8.1,
+      "assistsPerGame": 4.9,
+      "efficiency": 26.1
+    },
+    {
+      "id": 33,
+      "team_id": 11,
+      "name": "OG Anunoby",
+      "position": "C",
+      "age": 31,
+      "pointsPerGame": 19.6,
+      "reboundsPerGame": 9.6,
+      "assistsPerGame": 4.6,
+      "efficiency": 23.3
+    },
+    {
+      "id": 34,
+      "team_id": 12,
+      "name": "Paolo Banchero",
+      "position": "G",
+      "age": 21,
+      "pointsPerGame": 22.5,
+      "reboundsPerGame": 5.9,
+      "assistsPerGame": 5.8,
+      "efficiency": 24.6
+    },
+    {
+      "id": 35,
+      "team_id": 12,
+      "name": "Franz Wagner",
+      "position": "F",
+      "age": 23,
+      "pointsPerGame": 20.0,
+      "reboundsPerGame": 7.4,
+      "assistsPerGame": 4.7,
+      "efficiency": 24.0
+    },
+    {
+      "id": 36,
+      "team_id": 12,
+      "name": "Jalen Suggs",
+      "position": "C",
+      "age": 34,
+      "pointsPerGame": 19.1,
+      "reboundsPerGame": 9.5,
+      "assistsPerGame": 4.2,
+      "efficiency": 24.4
+    },
+    {
+      "id": 37,
+      "team_id": 13,
+      "name": "Joel Embiid",
+      "position": "G",
+      "age": 26,
+      "pointsPerGame": 23.1,
+      "reboundsPerGame": 6.3,
+      "assistsPerGame": 5.7,
+      "efficiency": 25.8
+    },
+    {
+      "id": 38,
+      "team_id": 13,
+      "name": "Tyrese Maxey",
+      "position": "F",
+      "age": 21,
+      "pointsPerGame": 21.7,
+      "reboundsPerGame": 8.6,
+      "assistsPerGame": 5.1,
+      "efficiency": 25.9
+    },
+    {
+      "id": 39,
+      "team_id": 13,
+      "name": "Tobias Harris",
+      "position": "C",
+      "age": 35,
+      "pointsPerGame": 18.7,
+      "reboundsPerGame": 9.4,
+      "assistsPerGame": 4.9,
+      "efficiency": 23.9
+    },
+    {
+      "id": 40,
+      "team_id": 14,
+      "name": "Scottie Barnes",
+      "position": "G",
+      "age": 29,
+      "pointsPerGame": 21.1,
+      "reboundsPerGame": 6.6,
+      "assistsPerGame": 5.1,
+      "efficiency": 24.7
+    },
+    {
+      "id": 41,
+      "team_id": 14,
+      "name": "RJ Barrett",
+      "position": "F",
+      "age": 33,
+      "pointsPerGame": 17.8,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 5.1,
+      "efficiency": 23.1
+    },
+    {
+      "id": 42,
+      "team_id": 14,
+      "name": "Immanuel Quickley",
+      "position": "C",
+      "age": 20,
+      "pointsPerGame": 17.7,
+      "reboundsPerGame": 8.2,
+      "assistsPerGame": 4.1,
+      "efficiency": 21.5
+    },
+    {
+      "id": 43,
+      "team_id": 15,
+      "name": "Jordan Poole",
+      "position": "G",
+      "age": 22,
+      "pointsPerGame": 17.6,
+      "reboundsPerGame": 4.7,
+      "assistsPerGame": 4.7,
+      "efficiency": 22.5
+    },
+    {
+      "id": 44,
+      "team_id": 15,
+      "name": "Kyle Kuzma",
+      "position": "F",
+      "age": 27,
+      "pointsPerGame": 17.6,
+      "reboundsPerGame": 6.5,
+      "assistsPerGame": 4.4,
+      "efficiency": 20.5
+    },
+    {
+      "id": 45,
+      "team_id": 15,
+      "name": "Bilal Coulibaly",
+      "position": "C",
+      "age": 34,
+      "pointsPerGame": 14.3,
+      "reboundsPerGame": 8.2,
+      "assistsPerGame": 4.1,
+      "efficiency": 19.1
+    },
+    {
+      "id": 46,
+      "team_id": 16,
+      "name": "Luka Doncic",
+      "position": "G",
+      "age": 23,
+      "pointsPerGame": 23.0,
+      "reboundsPerGame": 7.3,
+      "assistsPerGame": 6.2,
+      "efficiency": 28.4
+    },
+    {
+      "id": 47,
+      "team_id": 16,
+      "name": "Kyrie Irving",
+      "position": "F",
+      "age": 23,
+      "pointsPerGame": 21.1,
+      "reboundsPerGame": 8.5,
+      "assistsPerGame": 5.7,
+      "efficiency": 26.7
+    },
+    {
+      "id": 48,
+      "team_id": 16,
+      "name": "Dereck Lively II",
+      "position": "C",
+      "age": 35,
+      "pointsPerGame": 19.9,
+      "reboundsPerGame": 10.5,
+      "assistsPerGame": 4.1,
+      "efficiency": 24.6
+    },
+    {
+      "id": 49,
+      "team_id": 17,
+      "name": "Nikola Jokic",
+      "position": "G",
+      "age": 35,
+      "pointsPerGame": 24.9,
+      "reboundsPerGame": 6.9,
+      "assistsPerGame": 6.8,
+      "efficiency": 28.7
+    },
+    {
+      "id": 50,
+      "team_id": 17,
+      "name": "Jamal Murray",
+      "position": "F",
+      "age": 35,
+      "pointsPerGame": 23.8,
+      "reboundsPerGame": 8.1,
+      "assistsPerGame": 5.1,
+      "efficiency": 26.8
+    },
+    {
+      "id": 51,
+      "team_id": 17,
+      "name": "Michael Porter Jr.",
+      "position": "C",
+      "age": 28,
+      "pointsPerGame": 21.3,
+      "reboundsPerGame": 10.3,
+      "assistsPerGame": 5.0,
+      "efficiency": 24.6
+    },
+    {
+      "id": 52,
+      "team_id": 18,
+      "name": "Stephen Curry",
+      "position": "G",
+      "age": 23,
+      "pointsPerGame": 21.2,
+      "reboundsPerGame": 5.8,
+      "assistsPerGame": 5.7,
+      "efficiency": 26.1
+    },
+    {
+      "id": 53,
+      "team_id": 18,
+      "name": "Klay Thompson",
+      "position": "F",
+      "age": 22,
+      "pointsPerGame": 21.1,
+      "reboundsPerGame": 8.5,
+      "assistsPerGame": 5.2,
+      "efficiency": 25.1
+    },
+    {
+      "id": 54,
+      "team_id": 18,
+      "name": "Draymond Green",
+      "position": "C",
+      "age": 21,
+      "pointsPerGame": 17.7,
+      "reboundsPerGame": 9.0,
+      "assistsPerGame": 3.9,
+      "efficiency": 23.7
+    },
+    {
+      "id": 55,
+      "team_id": 19,
+      "name": "Alperen Sengun",
+      "position": "G",
+      "age": 30,
+      "pointsPerGame": 21.7,
+      "reboundsPerGame": 6.2,
+      "assistsPerGame": 5.0,
+      "efficiency": 24.9
+    },
+    {
+      "id": 56,
+      "team_id": 19,
+      "name": "Jalen Green",
+      "position": "F",
+      "age": 33,
+      "pointsPerGame": 19.0,
+      "reboundsPerGame": 7.7,
+      "assistsPerGame": 5.2,
+      "efficiency": 23.1
+    },
+    {
+      "id": 57,
+      "team_id": 19,
+      "name": "Fred VanVleet",
+      "position": "C",
+      "age": 25,
+      "pointsPerGame": 18.1,
+      "reboundsPerGame": 9.5,
+      "assistsPerGame": 4.0,
+      "efficiency": 24.3
+    },
+    {
+      "id": 58,
+      "team_id": 20,
+      "name": "Kawhi Leonard",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 23.5,
+      "reboundsPerGame": 7.0,
+      "assistsPerGame": 6.4,
+      "efficiency": 26.2
+    },
+    {
+      "id": 59,
+      "team_id": 20,
+      "name": "Paul George",
+      "position": "F",
+      "age": 25,
+      "pointsPerGame": 21.5,
+      "reboundsPerGame": 7.4,
+      "assistsPerGame": 4.9,
+      "efficiency": 24.9
+    },
+    {
+      "id": 60,
+      "team_id": 20,
+      "name": "James Harden",
+      "position": "C",
+      "age": 33,
+      "pointsPerGame": 20.5,
+      "reboundsPerGame": 9.6,
+      "assistsPerGame": 5.2,
+      "efficiency": 24.1
+    },
+    {
+      "id": 61,
+      "team_id": 21,
+      "name": "LeBron James",
+      "position": "G",
+      "age": 22,
+      "pointsPerGame": 23.6,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 5.4,
+      "efficiency": 26.4
+    },
+    {
+      "id": 62,
+      "team_id": 21,
+      "name": "Anthony Davis",
+      "position": "F",
+      "age": 32,
+      "pointsPerGame": 22.0,
+      "reboundsPerGame": 7.8,
+      "assistsPerGame": 5.6,
+      "efficiency": 26.2
+    },
+    {
+      "id": 63,
+      "team_id": 21,
+      "name": "Austin Reaves",
+      "position": "C",
+      "age": 30,
+      "pointsPerGame": 19.3,
+      "reboundsPerGame": 9.8,
+      "assistsPerGame": 4.9,
+      "efficiency": 24.5
+    },
+    {
+      "id": 64,
+      "team_id": 22,
+      "name": "Ja Morant",
+      "position": "G",
+      "age": 23,
+      "pointsPerGame": 20.8,
+      "reboundsPerGame": 7.0,
+      "assistsPerGame": 5.9,
+      "efficiency": 25.3
+    },
+    {
+      "id": 65,
+      "team_id": 22,
+      "name": "Jaren Jackson Jr.",
+      "position": "F",
+      "age": 26,
+      "pointsPerGame": 21.1,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 5.3,
+      "efficiency": 24.8
+    },
+    {
+      "id": 66,
+      "team_id": 22,
+      "name": "Desmond Bane",
+      "position": "C",
+      "age": 26,
+      "pointsPerGame": 17.9,
+      "reboundsPerGame": 9.9,
+      "assistsPerGame": 4.3,
+      "efficiency": 23.0
+    },
+    {
+      "id": 67,
+      "team_id": 23,
+      "name": "Anthony Edwards",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 23.2,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 6.1,
+      "efficiency": 27.4
+    },
+    {
+      "id": 68,
+      "team_id": 23,
+      "name": "Karl-Anthony Towns",
+      "position": "F",
+      "age": 25,
+      "pointsPerGame": 22.5,
+      "reboundsPerGame": 7.9,
+      "assistsPerGame": 6.0,
+      "efficiency": 25.1
+    },
+    {
+      "id": 69,
+      "team_id": 23,
+      "name": "Rudy Gobert",
+      "position": "C",
+      "age": 20,
+      "pointsPerGame": 21.8,
+      "reboundsPerGame": 9.9,
+      "assistsPerGame": 4.9,
+      "efficiency": 24.1
+    },
+    {
+      "id": 70,
+      "team_id": 24,
+      "name": "Zion Williamson",
+      "position": "G",
+      "age": 35,
+      "pointsPerGame": 23.6,
+      "reboundsPerGame": 7.1,
+      "assistsPerGame": 5.7,
+      "efficiency": 26.7
+    },
+    {
+      "id": 71,
+      "team_id": 24,
+      "name": "Brandon Ingram",
+      "position": "F",
+      "age": 34,
+      "pointsPerGame": 19.7,
+      "reboundsPerGame": 7.2,
+      "assistsPerGame": 5.4,
+      "efficiency": 23.6
+    },
+    {
+      "id": 72,
+      "team_id": 24,
+      "name": "CJ McCollum",
+      "position": "C",
+      "age": 32,
+      "pointsPerGame": 18.4,
+      "reboundsPerGame": 9.6,
+      "assistsPerGame": 4.8,
+      "efficiency": 24.3
+    },
+    {
+      "id": 73,
+      "team_id": 25,
+      "name": "Shai Gilgeous-Alexander",
+      "position": "G",
+      "age": 21,
+      "pointsPerGame": 23.8,
+      "reboundsPerGame": 6.7,
+      "assistsPerGame": 6.1,
+      "efficiency": 27.0
+    },
+    {
+      "id": 74,
+      "team_id": 25,
+      "name": "Jalen Williams",
+      "position": "F",
+      "age": 20,
+      "pointsPerGame": 22.3,
+      "reboundsPerGame": 8.3,
+      "assistsPerGame": 4.7,
+      "efficiency": 25.2
+    },
+    {
+      "id": 75,
+      "team_id": 25,
+      "name": "Chet Holmgren",
+      "position": "C",
+      "age": 32,
+      "pointsPerGame": 21.2,
+      "reboundsPerGame": 9.4,
+      "assistsPerGame": 5.0,
+      "efficiency": 25.6
+    },
+    {
+      "id": 76,
+      "team_id": 26,
+      "name": "Kevin Durant",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 23.2,
+      "reboundsPerGame": 6.6,
+      "assistsPerGame": 6.4,
+      "efficiency": 24.9
+    },
+    {
+      "id": 77,
+      "team_id": 26,
+      "name": "Devin Booker",
+      "position": "F",
+      "age": 30,
+      "pointsPerGame": 20.9,
+      "reboundsPerGame": 8.3,
+      "assistsPerGame": 5.6,
+      "efficiency": 25.7
+    },
+    {
+      "id": 78,
+      "team_id": 26,
+      "name": "Bradley Beal",
+      "position": "C",
+      "age": 32,
+      "pointsPerGame": 19.6,
+      "reboundsPerGame": 10.2,
+      "assistsPerGame": 4.5,
+      "efficiency": 23.3
+    },
+    {
+      "id": 79,
+      "team_id": 27,
+      "name": "Anfernee Simons",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 20.5,
+      "reboundsPerGame": 5.9,
+      "assistsPerGame": 4.9,
+      "efficiency": 22.0
+    },
+    {
+      "id": 80,
+      "team_id": 27,
+      "name": "Jerami Grant",
+      "position": "F",
+      "age": 34,
+      "pointsPerGame": 18.1,
+      "reboundsPerGame": 7.2,
+      "assistsPerGame": 3.8,
+      "efficiency": 20.6
+    },
+    {
+      "id": 81,
+      "team_id": 27,
+      "name": "Scoot Henderson",
+      "position": "C",
+      "age": 32,
+      "pointsPerGame": 17.1,
+      "reboundsPerGame": 8.2,
+      "assistsPerGame": 3.6,
+      "efficiency": 20.3
+    },
+    {
+      "id": 82,
+      "team_id": 28,
+      "name": "De'Aaron Fox",
+      "position": "G",
+      "age": 31,
+      "pointsPerGame": 22.2,
+      "reboundsPerGame": 6.4,
+      "assistsPerGame": 5.5,
+      "efficiency": 27.2
+    },
+    {
+      "id": 83,
+      "team_id": 28,
+      "name": "Domantas Sabonis",
+      "position": "F",
+      "age": 34,
+      "pointsPerGame": 22.4,
+      "reboundsPerGame": 7.5,
+      "assistsPerGame": 4.8,
+      "efficiency": 24.0
+    },
+    {
+      "id": 84,
+      "team_id": 28,
+      "name": "Keegan Murray",
+      "position": "C",
+      "age": 27,
+      "pointsPerGame": 19.3,
+      "reboundsPerGame": 9.9,
+      "assistsPerGame": 4.9,
+      "efficiency": 23.1
+    },
+    {
+      "id": 85,
+      "team_id": 29,
+      "name": "Victor Wembanyama",
+      "position": "G",
+      "age": 24,
+      "pointsPerGame": 21.3,
+      "reboundsPerGame": 5.5,
+      "assistsPerGame": 5.8,
+      "efficiency": 24.0
+    },
+    {
+      "id": 86,
+      "team_id": 29,
+      "name": "Devin Vassell",
+      "position": "F",
+      "age": 32,
+      "pointsPerGame": 19.5,
+      "reboundsPerGame": 7.8,
+      "assistsPerGame": 4.3,
+      "efficiency": 23.3
+    },
+    {
+      "id": 87,
+      "team_id": 29,
+      "name": "Keldon Johnson",
+      "position": "C",
+      "age": 30,
+      "pointsPerGame": 17.6,
+      "reboundsPerGame": 9.3,
+      "assistsPerGame": 4.4,
+      "efficiency": 22.9
+    },
+    {
+      "id": 88,
+      "team_id": 30,
+      "name": "Lauri Markkanen",
+      "position": "G",
+      "age": 29,
+      "pointsPerGame": 20.3,
+      "reboundsPerGame": 6.0,
+      "assistsPerGame": 4.6,
+      "efficiency": 22.6
+    },
+    {
+      "id": 89,
+      "team_id": 30,
+      "name": "Collin Sexton",
+      "position": "F",
+      "age": 35,
+      "pointsPerGame": 17.6,
+      "reboundsPerGame": 8.0,
+      "assistsPerGame": 4.3,
+      "efficiency": 22.1
+    },
+    {
+      "id": 90,
+      "team_id": 30,
+      "name": "Jordan Clarkson",
+      "position": "C",
+      "age": 25,
+      "pointsPerGame": 16.2,
+      "reboundsPerGame": 8.6,
+      "assistsPerGame": 4.5,
+      "efficiency": 20.0
+    }
+  ],
+  "games": [
+    {
+      "id": 180,
+      "date": "2025-03-08",
+      "homeTeamId": 23,
+      "awayTeamId": 7,
+      "homeScore": 122,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 179,
+      "date": "2025-03-08",
+      "homeTeamId": 13,
+      "awayTeamId": 18,
+      "homeScore": 116,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 178,
+      "date": "2025-03-08",
+      "homeTeamId": 25,
+      "awayTeamId": 21,
+      "homeScore": 118,
+      "awayScore": 101,
+      "status": "Final",
+      "arena": "Oklahoma City Arena"
+    },
+    {
+      "id": 177,
+      "date": "2025-03-08",
+      "homeTeamId": 1,
+      "awayTeamId": 30,
+      "homeScore": 114,
+      "awayScore": 101,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 176,
+      "date": "2025-03-08",
+      "homeTeamId": 26,
+      "awayTeamId": 14,
+      "homeScore": 116,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 175,
+      "date": "2025-03-07",
+      "homeTeamId": 14,
+      "awayTeamId": 30,
+      "homeScore": 109,
+      "awayScore": 122,
+      "status": "Final",
+      "arena": "Toronto Arena"
+    },
+    {
+      "id": 174,
+      "date": "2025-03-07",
+      "homeTeamId": 28,
+      "awayTeamId": 29,
+      "homeScore": 125,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Sacramento Arena"
+    },
+    {
+      "id": 173,
+      "date": "2025-03-07",
+      "homeTeamId": 27,
+      "awayTeamId": 19,
+      "homeScore": 111,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 172,
+      "date": "2025-03-07",
+      "homeTeamId": 3,
+      "awayTeamId": 13,
+      "homeScore": 126,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 171,
+      "date": "2025-03-07",
+      "homeTeamId": 9,
+      "awayTeamId": 12,
+      "homeScore": 120,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 170,
+      "date": "2025-03-06",
+      "homeTeamId": 14,
+      "awayTeamId": 12,
+      "homeScore": 128,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Toronto Arena"
+    },
+    {
+      "id": 169,
+      "date": "2025-03-06",
+      "homeTeamId": 10,
+      "awayTeamId": 5,
+      "homeScore": 123,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 168,
+      "date": "2025-03-06",
+      "homeTeamId": 15,
+      "awayTeamId": 13,
+      "homeScore": 109,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 167,
+      "date": "2025-03-06",
+      "homeTeamId": 16,
+      "awayTeamId": 22,
+      "homeScore": 114,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 166,
+      "date": "2025-03-06",
+      "homeTeamId": 6,
+      "awayTeamId": 1,
+      "homeScore": 114,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Cleveland Arena"
+    },
+    {
+      "id": 165,
+      "date": "2025-03-05",
+      "homeTeamId": 5,
+      "awayTeamId": 17,
+      "homeScore": 121,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 164,
+      "date": "2025-03-05",
+      "homeTeamId": 19,
+      "awayTeamId": 25,
+      "homeScore": 109,
+      "awayScore": 121,
+      "status": "Final",
+      "arena": "Houston Arena"
+    },
+    {
+      "id": 163,
+      "date": "2025-03-05",
+      "homeTeamId": 27,
+      "awayTeamId": 3,
+      "homeScore": 113,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 162,
+      "date": "2025-03-05",
+      "homeTeamId": 13,
+      "awayTeamId": 7,
+      "homeScore": 107,
+      "awayScore": 102,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 161,
+      "date": "2025-03-05",
+      "homeTeamId": 15,
+      "awayTeamId": 9,
+      "homeScore": 113,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 160,
+      "date": "2025-03-04",
+      "homeTeamId": 17,
+      "awayTeamId": 24,
+      "homeScore": 104,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 159,
+      "date": "2025-03-04",
+      "homeTeamId": 10,
+      "awayTeamId": 28,
+      "homeScore": 119,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 158,
+      "date": "2025-03-04",
+      "homeTeamId": 30,
+      "awayTeamId": 16,
+      "homeScore": 121,
+      "awayScore": 134,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 157,
+      "date": "2025-03-04",
+      "homeTeamId": 23,
+      "awayTeamId": 7,
+      "homeScore": 130,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 156,
+      "date": "2025-03-04",
+      "homeTeamId": 22,
+      "awayTeamId": 4,
+      "homeScore": 107,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Memphis Arena"
+    },
+    {
+      "id": 155,
+      "date": "2025-03-03",
+      "homeTeamId": 20,
+      "awayTeamId": 21,
+      "homeScore": 123,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 154,
+      "date": "2025-03-03",
+      "homeTeamId": 10,
+      "awayTeamId": 2,
+      "homeScore": 117,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 153,
+      "date": "2025-03-03",
+      "homeTeamId": 30,
+      "awayTeamId": 22,
+      "homeScore": 114,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 152,
+      "date": "2025-03-03",
+      "homeTeamId": 13,
+      "awayTeamId": 3,
+      "homeScore": 120,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 151,
+      "date": "2025-03-03",
+      "homeTeamId": 16,
+      "awayTeamId": 28,
+      "homeScore": 116,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 150,
+      "date": "2025-03-02",
+      "homeTeamId": 18,
+      "awayTeamId": 25,
+      "homeScore": 115,
+      "awayScore": 92,
+      "status": "Final",
+      "arena": "San Francisco Arena"
+    },
+    {
+      "id": 149,
+      "date": "2025-03-02",
+      "homeTeamId": 24,
+      "awayTeamId": 17,
+      "homeScore": 116,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 148,
+      "date": "2025-03-02",
+      "homeTeamId": 26,
+      "awayTeamId": 3,
+      "homeScore": 122,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 147,
+      "date": "2025-03-02",
+      "homeTeamId": 1,
+      "awayTeamId": 15,
+      "homeScore": 115,
+      "awayScore": 103,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 146,
+      "date": "2025-03-02",
+      "homeTeamId": 16,
+      "awayTeamId": 9,
+      "homeScore": 116,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 145,
+      "date": "2025-03-01",
+      "homeTeamId": 24,
+      "awayTeamId": 21,
+      "homeScore": 108,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 144,
+      "date": "2025-03-01",
+      "homeTeamId": 22,
+      "awayTeamId": 29,
+      "homeScore": 105,
+      "awayScore": 106,
+      "status": "Final",
+      "arena": "Memphis Arena"
+    },
+    {
+      "id": 143,
+      "date": "2025-03-01",
+      "homeTeamId": 26,
+      "awayTeamId": 1,
+      "homeScore": 129,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 142,
+      "date": "2025-03-01",
+      "homeTeamId": 27,
+      "awayTeamId": 28,
+      "homeScore": 119,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 141,
+      "date": "2025-03-01",
+      "homeTeamId": 17,
+      "awayTeamId": 19,
+      "homeScore": 118,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 140,
+      "date": "2025-02-28",
+      "homeTeamId": 30,
+      "awayTeamId": 10,
+      "homeScore": 121,
+      "awayScore": 121,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 139,
+      "date": "2025-02-28",
+      "homeTeamId": 11,
+      "awayTeamId": 16,
+      "homeScore": 116,
+      "awayScore": 98,
+      "status": "Final",
+      "arena": "New York Arena"
+    },
+    {
+      "id": 138,
+      "date": "2025-02-28",
+      "homeTeamId": 20,
+      "awayTeamId": 13,
+      "homeScore": 126,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 137,
+      "date": "2025-02-28",
+      "homeTeamId": 23,
+      "awayTeamId": 26,
+      "homeScore": 133,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 136,
+      "date": "2025-02-28",
+      "homeTeamId": 5,
+      "awayTeamId": 22,
+      "homeScore": 113,
+      "awayScore": 100,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 135,
+      "date": "2025-02-27",
+      "homeTeamId": 26,
+      "awayTeamId": 1,
+      "homeScore": 132,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 134,
+      "date": "2025-02-27",
+      "homeTeamId": 7,
+      "awayTeamId": 8,
+      "homeScore": 111,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Detroit Arena"
+    },
+    {
+      "id": 133,
+      "date": "2025-02-27",
+      "homeTeamId": 17,
+      "awayTeamId": 21,
+      "homeScore": 113,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 132,
+      "date": "2025-02-27",
+      "homeTeamId": 16,
+      "awayTeamId": 9,
+      "homeScore": 124,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 131,
+      "date": "2025-02-27",
+      "homeTeamId": 13,
+      "awayTeamId": 3,
+      "homeScore": 129,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 130,
+      "date": "2025-02-26",
+      "homeTeamId": 27,
+      "awayTeamId": 9,
+      "homeScore": 114,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 129,
+      "date": "2025-02-26",
+      "homeTeamId": 15,
+      "awayTeamId": 6,
+      "homeScore": 120,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 128,
+      "date": "2025-02-26",
+      "homeTeamId": 30,
+      "awayTeamId": 2,
+      "homeScore": 109,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 127,
+      "date": "2025-02-26",
+      "homeTeamId": 8,
+      "awayTeamId": 23,
+      "homeScore": 138,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 126,
+      "date": "2025-02-26",
+      "homeTeamId": 10,
+      "awayTeamId": 20,
+      "homeScore": 112,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 125,
+      "date": "2025-02-25",
+      "homeTeamId": 13,
+      "awayTeamId": 12,
+      "homeScore": 109,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 124,
+      "date": "2025-02-25",
+      "homeTeamId": 21,
+      "awayTeamId": 5,
+      "homeScore": 128,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 123,
+      "date": "2025-02-25",
+      "homeTeamId": 23,
+      "awayTeamId": 24,
+      "homeScore": 124,
+      "awayScore": 106,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 122,
+      "date": "2025-02-25",
+      "homeTeamId": 7,
+      "awayTeamId": 27,
+      "homeScore": 125,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Detroit Arena"
+    },
+    {
+      "id": 121,
+      "date": "2025-02-25",
+      "homeTeamId": 8,
+      "awayTeamId": 11,
+      "homeScore": 132,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 120,
+      "date": "2025-02-24",
+      "homeTeamId": 25,
+      "awayTeamId": 16,
+      "homeScore": 116,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Oklahoma City Arena"
+    },
+    {
+      "id": 119,
+      "date": "2025-02-24",
+      "homeTeamId": 18,
+      "awayTeamId": 7,
+      "homeScore": 132,
+      "awayScore": 95,
+      "status": "Final",
+      "arena": "San Francisco Arena"
+    },
+    {
+      "id": 118,
+      "date": "2025-02-24",
+      "homeTeamId": 24,
+      "awayTeamId": 17,
+      "homeScore": 111,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 117,
+      "date": "2025-02-24",
+      "homeTeamId": 1,
+      "awayTeamId": 28,
+      "homeScore": 109,
+      "awayScore": 102,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 116,
+      "date": "2025-02-24",
+      "homeTeamId": 9,
+      "awayTeamId": 2,
+      "homeScore": 116,
+      "awayScore": 123,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 115,
+      "date": "2025-02-23",
+      "homeTeamId": 6,
+      "awayTeamId": 30,
+      "homeScore": 116,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Cleveland Arena"
+    },
+    {
+      "id": 114,
+      "date": "2025-02-23",
+      "homeTeamId": 8,
+      "awayTeamId": 4,
+      "homeScore": 112,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 113,
+      "date": "2025-02-23",
+      "homeTeamId": 17,
+      "awayTeamId": 23,
+      "homeScore": 119,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 112,
+      "date": "2025-02-23",
+      "homeTeamId": 5,
+      "awayTeamId": 2,
+      "homeScore": 112,
+      "awayScore": 121,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 111,
+      "date": "2025-02-23",
+      "homeTeamId": 9,
+      "awayTeamId": 20,
+      "homeScore": 121,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 110,
+      "date": "2025-02-22",
+      "homeTeamId": 29,
+      "awayTeamId": 1,
+      "homeScore": 97,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "San Antonio Arena"
+    },
+    {
+      "id": 109,
+      "date": "2025-02-22",
+      "homeTeamId": 14,
+      "awayTeamId": 30,
+      "homeScore": 108,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Toronto Arena"
+    },
+    {
+      "id": 108,
+      "date": "2025-02-22",
+      "homeTeamId": 23,
+      "awayTeamId": 6,
+      "homeScore": 132,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 107,
+      "date": "2025-02-22",
+      "homeTeamId": 2,
+      "awayTeamId": 26,
+      "homeScore": 132,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 106,
+      "date": "2025-02-22",
+      "homeTeamId": 3,
+      "awayTeamId": 9,
+      "homeScore": 105,
+      "awayScore": 101,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 105,
+      "date": "2025-02-21",
+      "homeTeamId": 2,
+      "awayTeamId": 6,
+      "homeScore": 108,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 104,
+      "date": "2025-02-21",
+      "homeTeamId": 9,
+      "awayTeamId": 24,
+      "homeScore": 127,
+      "awayScore": 126,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 103,
+      "date": "2025-02-21",
+      "homeTeamId": 29,
+      "awayTeamId": 30,
+      "homeScore": 117,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "San Antonio Arena"
+    },
+    {
+      "id": 102,
+      "date": "2025-02-21",
+      "homeTeamId": 26,
+      "awayTeamId": 8,
+      "homeScore": 101,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 101,
+      "date": "2025-02-21",
+      "homeTeamId": 3,
+      "awayTeamId": 4,
+      "homeScore": 114,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 100,
+      "date": "2025-02-20",
+      "homeTeamId": 11,
+      "awayTeamId": 25,
+      "homeScore": 111,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "New York Arena"
+    },
+    {
+      "id": 99,
+      "date": "2025-02-20",
+      "homeTeamId": 17,
+      "awayTeamId": 13,
+      "homeScore": 125,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 98,
+      "date": "2025-02-20",
+      "homeTeamId": 23,
+      "awayTeamId": 14,
+      "homeScore": 110,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 97,
+      "date": "2025-02-20",
+      "homeTeamId": 8,
+      "awayTeamId": 6,
+      "homeScore": 116,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 96,
+      "date": "2025-02-20",
+      "homeTeamId": 22,
+      "awayTeamId": 27,
+      "homeScore": 118,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Memphis Arena"
+    },
+    {
+      "id": 95,
+      "date": "2025-02-19",
+      "homeTeamId": 4,
+      "awayTeamId": 5,
+      "homeScore": 117,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Charlotte Arena"
+    },
+    {
+      "id": 94,
+      "date": "2025-02-19",
+      "homeTeamId": 29,
+      "awayTeamId": 10,
+      "homeScore": 115,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "San Antonio Arena"
+    },
+    {
+      "id": 93,
+      "date": "2025-02-19",
+      "homeTeamId": 30,
+      "awayTeamId": 7,
+      "homeScore": 120,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 92,
+      "date": "2025-02-19",
+      "homeTeamId": 8,
+      "awayTeamId": 14,
+      "homeScore": 113,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 91,
+      "date": "2025-02-19",
+      "homeTeamId": 3,
+      "awayTeamId": 22,
+      "homeScore": 125,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 90,
+      "date": "2025-02-18",
+      "homeTeamId": 25,
+      "awayTeamId": 8,
+      "homeScore": 124,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Oklahoma City Arena"
+    },
+    {
+      "id": 89,
+      "date": "2025-02-18",
+      "homeTeamId": 18,
+      "awayTeamId": 16,
+      "homeScore": 118,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "San Francisco Arena"
+    },
+    {
+      "id": 88,
+      "date": "2025-02-18",
+      "homeTeamId": 15,
+      "awayTeamId": 30,
+      "homeScore": 95,
+      "awayScore": 103,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 87,
+      "date": "2025-02-18",
+      "homeTeamId": 23,
+      "awayTeamId": 9,
+      "homeScore": 124,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 86,
+      "date": "2025-02-18",
+      "homeTeamId": 17,
+      "awayTeamId": 7,
+      "homeScore": 113,
+      "awayScore": 93,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 85,
+      "date": "2025-02-17",
+      "homeTeamId": 25,
+      "awayTeamId": 30,
+      "homeScore": 111,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Oklahoma City Arena"
+    },
+    {
+      "id": 84,
+      "date": "2025-02-17",
+      "homeTeamId": 16,
+      "awayTeamId": 4,
+      "homeScore": 125,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 83,
+      "date": "2025-02-17",
+      "homeTeamId": 27,
+      "awayTeamId": 18,
+      "homeScore": 101,
+      "awayScore": 106,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 82,
+      "date": "2025-02-17",
+      "homeTeamId": 22,
+      "awayTeamId": 17,
+      "homeScore": 117,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Memphis Arena"
+    },
+    {
+      "id": 81,
+      "date": "2025-02-17",
+      "homeTeamId": 2,
+      "awayTeamId": 11,
+      "homeScore": 119,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 80,
+      "date": "2025-02-16",
+      "homeTeamId": 5,
+      "awayTeamId": 18,
+      "homeScore": 112,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 79,
+      "date": "2025-02-16",
+      "homeTeamId": 14,
+      "awayTeamId": 25,
+      "homeScore": 117,
+      "awayScore": 117,
+      "status": "Final",
+      "arena": "Toronto Arena"
+    },
+    {
+      "id": 78,
+      "date": "2025-02-16",
+      "homeTeamId": 19,
+      "awayTeamId": 17,
+      "homeScore": 105,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Houston Arena"
+    },
+    {
+      "id": 77,
+      "date": "2025-02-16",
+      "homeTeamId": 15,
+      "awayTeamId": 22,
+      "homeScore": 123,
+      "awayScore": 101,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 76,
+      "date": "2025-02-16",
+      "homeTeamId": 12,
+      "awayTeamId": 29,
+      "homeScore": 122,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 75,
+      "date": "2025-02-15",
+      "homeTeamId": 14,
+      "awayTeamId": 7,
+      "homeScore": 127,
+      "awayScore": 122,
+      "status": "Final",
+      "arena": "Toronto Arena"
+    },
+    {
+      "id": 74,
+      "date": "2025-02-15",
+      "homeTeamId": 17,
+      "awayTeamId": 5,
+      "homeScore": 118,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 73,
+      "date": "2025-02-15",
+      "homeTeamId": 21,
+      "awayTeamId": 4,
+      "homeScore": 117,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 72,
+      "date": "2025-02-15",
+      "homeTeamId": 26,
+      "awayTeamId": 24,
+      "homeScore": 117,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 71,
+      "date": "2025-02-15",
+      "homeTeamId": 1,
+      "awayTeamId": 30,
+      "homeScore": 118,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 70,
+      "date": "2025-02-14",
+      "homeTeamId": 23,
+      "awayTeamId": 5,
+      "homeScore": 124,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 69,
+      "date": "2025-02-14",
+      "homeTeamId": 26,
+      "awayTeamId": 6,
+      "homeScore": 98,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 68,
+      "date": "2025-02-14",
+      "homeTeamId": 30,
+      "awayTeamId": 3,
+      "homeScore": 106,
+      "awayScore": 103,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 67,
+      "date": "2025-02-14",
+      "homeTeamId": 15,
+      "awayTeamId": 29,
+      "homeScore": 102,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 66,
+      "date": "2025-02-14",
+      "homeTeamId": 24,
+      "awayTeamId": 13,
+      "homeScore": 127,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 65,
+      "date": "2025-02-13",
+      "homeTeamId": 24,
+      "awayTeamId": 3,
+      "homeScore": 133,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 64,
+      "date": "2025-02-13",
+      "homeTeamId": 21,
+      "awayTeamId": 12,
+      "homeScore": 106,
+      "awayScore": 117,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 63,
+      "date": "2025-02-13",
+      "homeTeamId": 1,
+      "awayTeamId": 16,
+      "homeScore": 121,
+      "awayScore": 129,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 62,
+      "date": "2025-02-13",
+      "homeTeamId": 30,
+      "awayTeamId": 27,
+      "homeScore": 105,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Salt Lake City Arena"
+    },
+    {
+      "id": 61,
+      "date": "2025-02-13",
+      "homeTeamId": 20,
+      "awayTeamId": 29,
+      "homeScore": 119,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 60,
+      "date": "2025-02-12",
+      "homeTeamId": 7,
+      "awayTeamId": 20,
+      "homeScore": 115,
+      "awayScore": 118,
+      "status": "Final",
+      "arena": "Detroit Arena"
+    },
+    {
+      "id": 59,
+      "date": "2025-02-12",
+      "homeTeamId": 16,
+      "awayTeamId": 25,
+      "homeScore": 119,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 58,
+      "date": "2025-02-12",
+      "homeTeamId": 26,
+      "awayTeamId": 9,
+      "homeScore": 124,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 57,
+      "date": "2025-02-12",
+      "homeTeamId": 1,
+      "awayTeamId": 28,
+      "homeScore": 137,
+      "awayScore": 103,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 56,
+      "date": "2025-02-12",
+      "homeTeamId": 12,
+      "awayTeamId": 24,
+      "homeScore": 125,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 55,
+      "date": "2025-02-11",
+      "homeTeamId": 23,
+      "awayTeamId": 29,
+      "homeScore": 119,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 54,
+      "date": "2025-02-11",
+      "homeTeamId": 8,
+      "awayTeamId": 18,
+      "homeScore": 122,
+      "awayScore": 100,
+      "status": "Final",
+      "arena": "Indianapolis Arena"
+    },
+    {
+      "id": 53,
+      "date": "2025-02-11",
+      "homeTeamId": 28,
+      "awayTeamId": 25,
+      "homeScore": 125,
+      "awayScore": 102,
+      "status": "Final",
+      "arena": "Sacramento Arena"
+    },
+    {
+      "id": 52,
+      "date": "2025-02-11",
+      "homeTeamId": 12,
+      "awayTeamId": 6,
+      "homeScore": 125,
+      "awayScore": 91,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 51,
+      "date": "2025-02-11",
+      "homeTeamId": 9,
+      "awayTeamId": 17,
+      "homeScore": 113,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 50,
+      "date": "2025-02-10",
+      "homeTeamId": 6,
+      "awayTeamId": 17,
+      "homeScore": 125,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Cleveland Arena"
+    },
+    {
+      "id": 49,
+      "date": "2025-02-10",
+      "homeTeamId": 9,
+      "awayTeamId": 16,
+      "homeScore": 94,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 48,
+      "date": "2025-02-10",
+      "homeTeamId": 11,
+      "awayTeamId": 27,
+      "homeScore": 116,
+      "awayScore": 109,
+      "status": "Final",
+      "arena": "New York Arena"
+    },
+    {
+      "id": 47,
+      "date": "2025-02-10",
+      "homeTeamId": 4,
+      "awayTeamId": 24,
+      "homeScore": 109,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Charlotte Arena"
+    },
+    {
+      "id": 46,
+      "date": "2025-02-10",
+      "homeTeamId": 3,
+      "awayTeamId": 5,
+      "homeScore": 134,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 45,
+      "date": "2025-02-09",
+      "homeTeamId": 3,
+      "awayTeamId": 7,
+      "homeScore": 105,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 44,
+      "date": "2025-02-09",
+      "homeTeamId": 20,
+      "awayTeamId": 30,
+      "homeScore": 132,
+      "awayScore": 89,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 43,
+      "date": "2025-02-09",
+      "homeTeamId": 4,
+      "awayTeamId": 12,
+      "homeScore": 111,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Charlotte Arena"
+    },
+    {
+      "id": 42,
+      "date": "2025-02-09",
+      "homeTeamId": 5,
+      "awayTeamId": 18,
+      "homeScore": 115,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 41,
+      "date": "2025-02-09",
+      "homeTeamId": 1,
+      "awayTeamId": 19,
+      "homeScore": 112,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Atlanta Arena"
+    },
+    {
+      "id": 40,
+      "date": "2025-02-08",
+      "homeTeamId": 15,
+      "awayTeamId": 18,
+      "homeScore": 112,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 39,
+      "date": "2025-02-08",
+      "homeTeamId": 24,
+      "awayTeamId": 2,
+      "homeScore": 118,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 38,
+      "date": "2025-02-08",
+      "homeTeamId": 21,
+      "awayTeamId": 22,
+      "homeScore": 119,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 37,
+      "date": "2025-02-08",
+      "homeTeamId": 17,
+      "awayTeamId": 20,
+      "homeScore": 127,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 36,
+      "date": "2025-02-08",
+      "homeTeamId": 23,
+      "awayTeamId": 28,
+      "homeScore": 112,
+      "awayScore": 117,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 35,
+      "date": "2025-02-07",
+      "homeTeamId": 6,
+      "awayTeamId": 24,
+      "homeScore": 99,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Cleveland Arena"
+    },
+    {
+      "id": 34,
+      "date": "2025-02-07",
+      "homeTeamId": 5,
+      "awayTeamId": 3,
+      "homeScore": 108,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Chicago Arena"
+    },
+    {
+      "id": 33,
+      "date": "2025-02-07",
+      "homeTeamId": 13,
+      "awayTeamId": 8,
+      "homeScore": 116,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 32,
+      "date": "2025-02-07",
+      "homeTeamId": 12,
+      "awayTeamId": 22,
+      "homeScore": 106,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 31,
+      "date": "2025-02-07",
+      "homeTeamId": 23,
+      "awayTeamId": 14,
+      "homeScore": 119,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Minneapolis Arena"
+    },
+    {
+      "id": 30,
+      "date": "2025-02-06",
+      "homeTeamId": 10,
+      "awayTeamId": 5,
+      "homeScore": 109,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 29,
+      "date": "2025-02-06",
+      "homeTeamId": 2,
+      "awayTeamId": 7,
+      "homeScore": 118,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 28,
+      "date": "2025-02-06",
+      "homeTeamId": 4,
+      "awayTeamId": 16,
+      "homeScore": 118,
+      "awayScore": 120,
+      "status": "Final",
+      "arena": "Charlotte Arena"
+    },
+    {
+      "id": 27,
+      "date": "2025-02-06",
+      "homeTeamId": 6,
+      "awayTeamId": 20,
+      "homeScore": 125,
+      "awayScore": 108,
+      "status": "Final",
+      "arena": "Cleveland Arena"
+    },
+    {
+      "id": 26,
+      "date": "2025-02-06",
+      "homeTeamId": 15,
+      "awayTeamId": 12,
+      "homeScore": 113,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Washington Arena"
+    },
+    {
+      "id": 25,
+      "date": "2025-02-05",
+      "homeTeamId": 9,
+      "awayTeamId": 28,
+      "homeScore": 122,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Miami Arena"
+    },
+    {
+      "id": 24,
+      "date": "2025-02-05",
+      "homeTeamId": 3,
+      "awayTeamId": 24,
+      "homeScore": 103,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 23,
+      "date": "2025-02-05",
+      "homeTeamId": 26,
+      "awayTeamId": 15,
+      "homeScore": 106,
+      "awayScore": 103,
+      "status": "Final",
+      "arena": "Phoenix Arena"
+    },
+    {
+      "id": 22,
+      "date": "2025-02-05",
+      "homeTeamId": 16,
+      "awayTeamId": 19,
+      "homeScore": 117,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Dallas Arena"
+    },
+    {
+      "id": 21,
+      "date": "2025-02-05",
+      "homeTeamId": 12,
+      "awayTeamId": 20,
+      "homeScore": 116,
+      "awayScore": 110,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 20,
+      "date": "2025-02-04",
+      "homeTeamId": 17,
+      "awayTeamId": 14,
+      "homeScore": 121,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Denver Arena"
+    },
+    {
+      "id": 19,
+      "date": "2025-02-04",
+      "homeTeamId": 3,
+      "awayTeamId": 4,
+      "homeScore": 101,
+      "awayScore": 104,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 18,
+      "date": "2025-02-04",
+      "homeTeamId": 10,
+      "awayTeamId": 20,
+      "homeScore": 121,
+      "awayScore": 112,
+      "status": "Final",
+      "arena": "Milwaukee Arena"
+    },
+    {
+      "id": 17,
+      "date": "2025-02-04",
+      "homeTeamId": 24,
+      "awayTeamId": 15,
+      "homeScore": 124,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 16,
+      "date": "2025-02-04",
+      "homeTeamId": 29,
+      "awayTeamId": 11,
+      "homeScore": 118,
+      "awayScore": 119,
+      "status": "Final",
+      "arena": "San Antonio Arena"
+    },
+    {
+      "id": 15,
+      "date": "2025-02-03",
+      "homeTeamId": 22,
+      "awayTeamId": 30,
+      "homeScore": 107,
+      "awayScore": 105,
+      "status": "Final",
+      "arena": "Memphis Arena"
+    },
+    {
+      "id": 14,
+      "date": "2025-02-03",
+      "homeTeamId": 7,
+      "awayTeamId": 16,
+      "homeScore": 112,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Detroit Arena"
+    },
+    {
+      "id": 13,
+      "date": "2025-02-03",
+      "homeTeamId": 2,
+      "awayTeamId": 20,
+      "homeScore": 114,
+      "awayScore": 126,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 12,
+      "date": "2025-02-03",
+      "homeTeamId": 3,
+      "awayTeamId": 19,
+      "homeScore": 107,
+      "awayScore": 107,
+      "status": "Final",
+      "arena": "Brooklyn Arena"
+    },
+    {
+      "id": 11,
+      "date": "2025-02-03",
+      "homeTeamId": 18,
+      "awayTeamId": 23,
+      "homeScore": 110,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "San Francisco Arena"
+    },
+    {
+      "id": 10,
+      "date": "2025-02-02",
+      "homeTeamId": 24,
+      "awayTeamId": 18,
+      "homeScore": 111,
+      "awayScore": 106,
+      "status": "Final",
+      "arena": "New Orleans Arena"
+    },
+    {
+      "id": 9,
+      "date": "2025-02-02",
+      "homeTeamId": 28,
+      "awayTeamId": 8,
+      "homeScore": 121,
+      "awayScore": 122,
+      "status": "Final",
+      "arena": "Sacramento Arena"
+    },
+    {
+      "id": 8,
+      "date": "2025-02-02",
+      "homeTeamId": 27,
+      "awayTeamId": 13,
+      "homeScore": 109,
+      "awayScore": 126,
+      "status": "Final",
+      "arena": "Portland Arena"
+    },
+    {
+      "id": 7,
+      "date": "2025-02-02",
+      "homeTeamId": 2,
+      "awayTeamId": 29,
+      "homeScore": 121,
+      "awayScore": 113,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 6,
+      "date": "2025-02-02",
+      "homeTeamId": 21,
+      "awayTeamId": 19,
+      "homeScore": 121,
+      "awayScore": 106,
+      "status": "Final",
+      "arena": "Los Angeles Arena"
+    },
+    {
+      "id": 5,
+      "date": "2025-02-01",
+      "homeTeamId": 12,
+      "awayTeamId": 19,
+      "homeScore": 121,
+      "awayScore": 115,
+      "status": "Final",
+      "arena": "Orlando Arena"
+    },
+    {
+      "id": 4,
+      "date": "2025-02-01",
+      "homeTeamId": 18,
+      "awayTeamId": 4,
+      "homeScore": 103,
+      "awayScore": 116,
+      "status": "Final",
+      "arena": "San Francisco Arena"
+    },
+    {
+      "id": 3,
+      "date": "2025-02-01",
+      "homeTeamId": 2,
+      "awayTeamId": 3,
+      "homeScore": 122,
+      "awayScore": 111,
+      "status": "Final",
+      "arena": "Boston Arena"
+    },
+    {
+      "id": 2,
+      "date": "2025-02-01",
+      "homeTeamId": 13,
+      "awayTeamId": 21,
+      "homeScore": 125,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "Philadelphia Arena"
+    },
+    {
+      "id": 1,
+      "date": "2025-02-01",
+      "homeTeamId": 11,
+      "awayTeamId": 5,
+      "homeScore": 126,
+      "awayScore": 114,
+      "status": "Final",
+      "arena": "New York Arena"
+    }
+  ],
+  "teamStats": [
+    {
+      "teamId": 1,
+      "wins": 8,
+      "losses": 3,
+      "winPct": 0.727,
+      "pointsPerGame": 115.6,
+      "pointsAllowedPerGame": 111.2,
+      "reboundsPerGame": 44.3,
+      "assistsPerGame": 24.9,
+      "recentForm": 0.7
+    },
+    {
+      "teamId": 2,
+      "wins": 9,
+      "losses": 3,
+      "winPct": 0.75,
+      "pointsPerGame": 118.6,
+      "pointsAllowedPerGame": 115.1,
+      "reboundsPerGame": 46.4,
+      "assistsPerGame": 26.9,
+      "recentForm": 0.8
+    },
+    {
+      "teamId": 3,
+      "wins": 7,
+      "losses": 10,
+      "winPct": 0.412,
+      "pointsPerGame": 113.4,
+      "pointsAllowedPerGame": 114.2,
+      "reboundsPerGame": 43.5,
+      "assistsPerGame": 25.0,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 4,
+      "wins": 5,
+      "losses": 6,
+      "winPct": 0.455,
+      "pointsPerGame": 112.1,
+      "pointsAllowedPerGame": 112.0,
+      "reboundsPerGame": 43.1,
+      "assistsPerGame": 24.3,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 5,
+      "wins": 5,
+      "losses": 9,
+      "winPct": 0.357,
+      "pointsPerGame": 113.7,
+      "pointsAllowedPerGame": 117.9,
+      "reboundsPerGame": 43.8,
+      "assistsPerGame": 25.0,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 6,
+      "wins": 4,
+      "losses": 7,
+      "winPct": 0.364,
+      "pointsPerGame": 112.2,
+      "pointsAllowedPerGame": 112.7,
+      "reboundsPerGame": 45.1,
+      "assistsPerGame": 26.6,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 7,
+      "wins": 4,
+      "losses": 9,
+      "winPct": 0.308,
+      "pointsPerGame": 110.9,
+      "pointsAllowedPerGame": 116.8,
+      "reboundsPerGame": 43.3,
+      "assistsPerGame": 23.5,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 8,
+      "wins": 7,
+      "losses": 4,
+      "winPct": 0.636,
+      "pointsPerGame": 119.6,
+      "pointsAllowedPerGame": 111.5,
+      "reboundsPerGame": 45.4,
+      "assistsPerGame": 25.7,
+      "recentForm": 0.7
+    },
+    {
+      "teamId": 9,
+      "wins": 5,
+      "losses": 9,
+      "winPct": 0.357,
+      "pointsPerGame": 113.8,
+      "pointsAllowedPerGame": 116.1,
+      "reboundsPerGame": 44.2,
+      "assistsPerGame": 26.1,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 10,
+      "wins": 5,
+      "losses": 3,
+      "winPct": 0.625,
+      "pointsPerGame": 116.5,
+      "pointsAllowedPerGame": 114.1,
+      "reboundsPerGame": 45.3,
+      "assistsPerGame": 27.1,
+      "recentForm": 0.62
+    },
+    {
+      "teamId": 11,
+      "wins": 6,
+      "losses": 1,
+      "winPct": 0.857,
+      "pointsPerGame": 116.9,
+      "pointsAllowedPerGame": 113.9,
+      "reboundsPerGame": 44.9,
+      "assistsPerGame": 27.0,
+      "recentForm": 0.86
+    },
+    {
+      "teamId": 12,
+      "wins": 8,
+      "losses": 4,
+      "winPct": 0.667,
+      "pointsPerGame": 115.8,
+      "pointsAllowedPerGame": 111.9,
+      "reboundsPerGame": 44.9,
+      "assistsPerGame": 25.5,
+      "recentForm": 0.8
+    },
+    {
+      "teamId": 13,
+      "wins": 8,
+      "losses": 5,
+      "winPct": 0.615,
+      "pointsPerGame": 116.5,
+      "pointsAllowedPerGame": 116.6,
+      "reboundsPerGame": 44.8,
+      "assistsPerGame": 26.0,
+      "recentForm": 0.6
+    },
+    {
+      "teamId": 14,
+      "wins": 3,
+      "losses": 7,
+      "winPct": 0.3,
+      "pointsPerGame": 113.9,
+      "pointsAllowedPerGame": 116.5,
+      "reboundsPerGame": 44.3,
+      "assistsPerGame": 24.2,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 15,
+      "wins": 3,
+      "losses": 8,
+      "winPct": 0.273,
+      "pointsPerGame": 108.9,
+      "pointsAllowedPerGame": 111.7,
+      "reboundsPerGame": 42.6,
+      "assistsPerGame": 23.4,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 16,
+      "wins": 10,
+      "losses": 5,
+      "winPct": 0.667,
+      "pointsPerGame": 117.0,
+      "pointsAllowedPerGame": 113.4,
+      "reboundsPerGame": 46.2,
+      "assistsPerGame": 26.8,
+      "recentForm": 0.7
+    },
+    {
+      "teamId": 17,
+      "wins": 8,
+      "losses": 8,
+      "winPct": 0.5,
+      "pointsPerGame": 113.2,
+      "pointsAllowedPerGame": 113.1,
+      "reboundsPerGame": 46.0,
+      "assistsPerGame": 27.3,
+      "recentForm": 0.7
+    },
+    {
+      "teamId": 18,
+      "wins": 6,
+      "losses": 6,
+      "winPct": 0.5,
+      "pointsPerGame": 112.2,
+      "pointsAllowedPerGame": 109.8,
+      "reboundsPerGame": 44.9,
+      "assistsPerGame": 25.3,
+      "recentForm": 0.5
+    },
+    {
+      "teamId": 19,
+      "wins": 1,
+      "losses": 8,
+      "winPct": 0.111,
+      "pointsPerGame": 108.3,
+      "pointsAllowedPerGame": 114.8,
+      "reboundsPerGame": 44.5,
+      "assistsPerGame": 25.4,
+      "recentForm": 0.11
+    },
+    {
+      "teamId": 20,
+      "wins": 7,
+      "losses": 5,
+      "winPct": 0.583,
+      "pointsPerGame": 118.6,
+      "pointsAllowedPerGame": 113.9,
+      "reboundsPerGame": 45.7,
+      "assistsPerGame": 26.7,
+      "recentForm": 0.5
+    },
+    {
+      "teamId": 21,
+      "wins": 4,
+      "losses": 6,
+      "winPct": 0.4,
+      "pointsPerGame": 114.1,
+      "pointsAllowedPerGame": 115.7,
+      "reboundsPerGame": 45.3,
+      "assistsPerGame": 25.9,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 22,
+      "wins": 5,
+      "losses": 7,
+      "winPct": 0.417,
+      "pointsPerGame": 109.1,
+      "pointsAllowedPerGame": 113.0,
+      "reboundsPerGame": 44.8,
+      "assistsPerGame": 25.1,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 23,
+      "wins": 10,
+      "losses": 4,
+      "winPct": 0.714,
+      "pointsPerGame": 120.0,
+      "pointsAllowedPerGame": 115.9,
+      "reboundsPerGame": 45.7,
+      "assistsPerGame": 26.9,
+      "recentForm": 0.7
+    },
+    {
+      "teamId": 24,
+      "wins": 12,
+      "losses": 4,
+      "winPct": 0.75,
+      "pointsPerGame": 116.0,
+      "pointsAllowedPerGame": 111.8,
+      "reboundsPerGame": 44.4,
+      "assistsPerGame": 26.4,
+      "recentForm": 0.8
+    },
+    {
+      "teamId": 25,
+      "wins": 6,
+      "losses": 4,
+      "winPct": 0.6,
+      "pointsPerGame": 112.7,
+      "pointsAllowedPerGame": 113.7,
+      "reboundsPerGame": 46.0,
+      "assistsPerGame": 26.8,
+      "recentForm": 0.6
+    },
+    {
+      "teamId": 26,
+      "wins": 6,
+      "losses": 5,
+      "winPct": 0.545,
+      "pointsPerGame": 116.5,
+      "pointsAllowedPerGame": 116.5,
+      "reboundsPerGame": 45.8,
+      "assistsPerGame": 26.8,
+      "recentForm": 0.5
+    },
+    {
+      "teamId": 27,
+      "wins": 4,
+      "losses": 6,
+      "winPct": 0.4,
+      "pointsPerGame": 112.0,
+      "pointsAllowedPerGame": 114.8,
+      "reboundsPerGame": 43.3,
+      "assistsPerGame": 23.9,
+      "recentForm": 0.4
+    },
+    {
+      "teamId": 28,
+      "wins": 3,
+      "losses": 7,
+      "winPct": 0.3,
+      "pointsPerGame": 114.0,
+      "pointsAllowedPerGame": 116.7,
+      "reboundsPerGame": 45.1,
+      "assistsPerGame": 25.8,
+      "recentForm": 0.3
+    },
+    {
+      "teamId": 29,
+      "wins": 5,
+      "losses": 6,
+      "winPct": 0.455,
+      "pointsPerGame": 112.1,
+      "pointsAllowedPerGame": 113.7,
+      "reboundsPerGame": 43.8,
+      "assistsPerGame": 24.7,
+      "recentForm": 0.5
+    },
+    {
+      "teamId": 30,
+      "wins": 6,
+      "losses": 11,
+      "winPct": 0.353,
+      "pointsPerGame": 108.9,
+      "pointsAllowedPerGame": 113.9,
+      "reboundsPerGame": 43.8,
+      "assistsPerGame": 24.6,
+      "recentForm": 0.4
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@analisinba.local",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin NBA"
+    },
+    {
+      "email": "viewer@analisinba.local",
+      "password": "viewer123",
+      "role": "viewer",
+      "name": "Viewer NBA"
+    }
+  ]
+}
