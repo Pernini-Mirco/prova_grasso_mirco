@@ -5,14 +5,16 @@ import { spawn } from 'node:child_process';
 const rootDir = process.cwd();
 const isWindows = process.platform === 'win32';
 const npmCommand = isWindows ? 'cmd.exe' : 'npm';
+const npmRegistry = 'https://registry.npmjs.org/';
 
 const services = [
   {
     name: 'backend',
     cwd: resolve(rootDir, 'backend'),
     args: ['start'],
-    installArgs: ['install'],
     nodeModules: resolve(rootDir, 'backend', 'node_modules'),
+    installCheck: resolve(rootDir, 'backend', 'node_modules', 'express', 'package.json'),
+    lockFile: resolve(rootDir, 'backend', 'package-lock.json'),
     envExample: resolve(rootDir, 'backend', '.env.example'),
     envFile: resolve(rootDir, 'backend', '.env')
   },
@@ -20,8 +22,9 @@ const services = [
     name: 'frontend',
     cwd: resolve(rootDir, 'frontend'),
     args: ['run', 'dev'],
-    installArgs: ['install'],
     nodeModules: resolve(rootDir, 'frontend', 'node_modules'),
+    installCheck: resolve(rootDir, 'frontend', 'node_modules', 'vite', 'bin', 'vite.js'),
+    lockFile: resolve(rootDir, 'frontend', 'package-lock.json'),
     envExample: resolve(rootDir, 'frontend', '.env.example'),
     envFile: resolve(rootDir, 'frontend', '.env')
   }
@@ -42,6 +45,10 @@ function runNpmCommand(args, cwd) {
   return new Promise((resolveCommand, rejectCommand) => {
     const child = spawn(npmCommand, buildCommandArgs(args), {
       cwd,
+      env: {
+        ...process.env,
+        NPM_CONFIG_REGISTRY: npmRegistry
+      },
       stdio: 'inherit',
       shell: false,
       windowsHide: false
@@ -80,9 +87,26 @@ async function ensureServiceReady(service) {
 
   ensureEnvFile(service);
 
-  if (!existsSync(service.nodeModules)) {
-    console.log(`[${service.name}] dipendenze mancanti: eseguo npm install...`);
-    await runNpmCommand(service.installArgs, service.cwd);
+  if (!existsSync(service.nodeModules) || !existsSync(service.installCheck)) {
+    const installCommand = existsSync(service.lockFile)
+      ? ['ci', '--no-audit', '--no-fund']
+      : ['install', '--no-audit', '--no-fund'];
+
+    console.log(
+      `[${service.name}] dipendenze mancanti: eseguo npm ${installCommand.join(' ')}...`
+    );
+
+    try {
+      await runNpmCommand(installCommand, service.cwd);
+    } catch (error) {
+      if (installCommand[0] === 'ci') {
+        console.log(`[${service.name}] npm ci non riuscito, provo npm install come fallback...`);
+        await runNpmCommand(['install', '--no-audit', '--no-fund'], service.cwd);
+        return;
+      }
+
+      throw error;
+    }
   }
 }
 
