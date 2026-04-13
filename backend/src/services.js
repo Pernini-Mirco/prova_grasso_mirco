@@ -838,6 +838,7 @@ export async function register({ name, email, password }) {
   const cleanName = String(name || '').trim();
   const cleanEmail = normalizeEmail(email);
   const cleanPassword = String(password || '');
+  const duplicateEmailMessage = 'Esiste gia un account con questa email.';
 
   if (!cleanName || cleanName.length < 2) {
     throw new Error('Inserisci un nome valido.');
@@ -851,10 +852,41 @@ export async function register({ name, email, password }) {
     throw new Error('La password deve contenere almeno 8 caratteri.');
   }
 
-  if (isDatabaseConfigured()) {
-    if (!(await canUseDatabase())) {
-      throw new Error('Database MySQL configurato ma non raggiungibile.');
+  const databaseEnabled = isDatabaseConfigured();
+  const databaseReady = databaseEnabled ? await canUseDatabase() : false;
+
+  if (databaseEnabled && !databaseReady) {
+    throw new Error('Database MySQL configurato ma non raggiungibile.');
+  }
+
+  if (findUserByEmail(cleanEmail)) {
+    throw new Error(duplicateEmailMessage);
+  }
+
+  if (databaseReady) {
+    const existingDatabaseUser = await findDatabaseUserByEmail(cleanEmail);
+
+    if (existingDatabaseUser) {
+      throw new Error(duplicateEmailMessage);
     }
+
+    try {
+      const createdDatabaseUser = await createDatabaseUser({
+        name: cleanName,
+        email: cleanEmail,
+        password: cleanPassword
+      });
+
+      return sanitizeDatabaseUser(createdDatabaseUser);
+    } catch (error) {
+      if (error?.code === 'ER_DUP_ENTRY') {
+        throw new Error(duplicateEmailMessage);
+      }
+
+      throw error;
+    }
+
+    /* Legacy branch kept commented while cleaning mixed-encoding text.
 
     const existingUser = await findDatabaseUserByEmail(cleanEmail);
 
@@ -869,6 +901,7 @@ export async function register({ name, email, password }) {
     });
 
     return sanitizeDatabaseUser(user);
+    */
   }
 
   const user = createLocalUser({ name: cleanName, email: cleanEmail, password: cleanPassword });
