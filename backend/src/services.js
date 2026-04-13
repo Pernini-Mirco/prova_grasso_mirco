@@ -324,8 +324,24 @@ async function getData() {
   }
 
   const snapshot = getSnapshot();
+  const teamById = new Map((snapshot.teams || []).map((team) => [Number(team.id), team]));
+  const normalizedGames = (snapshot.games || []).map((game) => {
+    const homeTeam = teamById.get(Number(game.homeTeamId));
+    const normalizedStatus = normalizeGameStatus(game);
+    const hasResult =
+      normalizedStatus === 'Final' || Number(game.homeScore) > 0 || Number(game.awayScore) > 0;
+
+    return {
+      ...game,
+      status: normalizedStatus,
+      arena: game.arena || inferArenaName(homeTeam),
+      hasResult
+    };
+  });
+
   return {
     ...snapshot,
+    games: normalizedGames,
     meta: {
       ...(snapshot.meta || {}),
       source: 'snapshot',

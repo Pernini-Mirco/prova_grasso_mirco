@@ -140,8 +140,10 @@ export default function DashboardPage() {
   const { overview } = payload;
   const { topScorer, topEfficiency, leaders, recentGames, completedGames } = derived;
   const runnerUpScorer = leaders[1] || null;
+  const isLiveDatabase = overview.meta?.source === 'database';
   const lastSyncLabel = formatDateTime(overview.meta?.generatedAt);
-  const syncSourceLabel = overview.meta?.source === 'database' ? 'MySQL live' : 'Snapshot locale';
+  const syncSourceLabel = isLiveDatabase ? 'MySQL live' : 'Snapshot locale';
+  const syncTitleLabel = isLiveDatabase ? 'Last sync' : 'Snapshot date';
   const seasonLabel = overview.meta?.season ? `Season ${overview.meta.season}` : 'Season current';
   const coverageRate = overview.totals.teams
     ? (safeNumber(overview.totals.trackedStats, 0) / safeNumber(overview.totals.teams, 0)) * 100
@@ -375,7 +377,7 @@ export default function DashboardPage() {
           <div className="rail-section">
             <div className="sync-status-card">
               <div>
-                <p className="mini-label">Last sync</p>
+                <p className="mini-label">{syncTitleLabel}</p>
                 <strong>{lastSyncLabel}</strong>
                 <span>
                   {syncSourceLabel} - Season {overview.meta?.season || 'N/D'} -{' '}
