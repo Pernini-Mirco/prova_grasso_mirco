@@ -301,18 +301,26 @@ export default function LoginPage({ onAuth, onLogout, session }) {
             <button
               type="button"
               className={`tab-button ${mode === 'login' ? 'active' : ''}`}
-              onClick={() => setMode('login')}
+              onClick={() => {
+                setMode('login');
+                setMessage('');
+              }}
             >
               Accedi
             </button>
             <button
               type="button"
               className={`tab-button ${mode === 'register' ? 'active' : ''}`}
-              onClick={() => setMode('register')}
+              onClick={() => {
+                setMode('register');
+                setMessage('');
+              }}
             >
               Registrati
             </button>
           </div>
+
+          {message ? <p className="helper auth-message auth-form-message">{message}</p> : null}
 
           {mode === 'login' ? (
             <form className="form-panel auth-form" onSubmit={submitLogin}>
@@ -400,8 +408,6 @@ export default function LoginPage({ onAuth, onLogout, session }) {
               </p>
             </div>
           )}
-
-          {message ? <p className="helper auth-message">{message}</p> : null}
         </div>
       </section>
 
